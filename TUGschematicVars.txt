@@ -1,0 +1,1837 @@
+"Chest": priority.
+"Hair": priority.
+"Helmet": priority.
+"Hips": priority.
+"Left Arm": submesh, priority.
+"Left Foot": priority.
+"Left Hand": submesh, priority.
+"Left Leg": priority.
+"Left Shoulder": priority.
+"Neck": priority.
+"Right Arm": priority.
+"Right Foot": priority.
+"Right Leg": priority.
+"Right Shoulder": priority.
+1: name, parentAttach, childAttach, hingeAxis, baseAngle, closeRotation, activateDuration, releaseDuration, wiggleAxis, wiggleDuration, wiggleWait, wiggleMagnitude, wiggleWaitVariance, altWallPath, baseWallPath, objectName, growthTime, beginningScale, endingScale, pickable, emitterName, childToDisable, offset, rotationOffset, scale.
+2: name, parentAttach, childAttach, hingeAxis, baseAngle, closeRotation, activateDuration, releaseDuration, wiggleAxis, wiggleDuration, wiggleWait, wiggleMagnitude, wiggleWaitVariance, altWallPath, baseWallPath, objectName, growthTime, beginningScale, endingScale, pickable, childToDisable, emitterName, freeControllerWhenFinished, offset, rotationOffset, scale.
+3: objectName, growthTime, beginningScale, endingScale, pickable, freeControllerWhenFinished, emitterName, activatePhysics, name, parentAttach, childAttach, hingeAxis, baseAngle, closeRotation, activateDuration, releaseDuration, offset, rotationOffset, scale.
+4: name, parentAttach, childAttach, hingeAxis, baseAngle, closeRotation, activateDuration, releaseDuration, offset, rotationOffset, scale.
+Acacia Clusters: weight.
+Acacia Sapling: Tag, offset, minScale, maxScale.
+Acacia Tree: Tag, offset, minScale, maxScale.
+Acacia Tree Sapling: object, weight, minScale, maxScale.
+Acacia Trees: weight.
+Affects: "Wood", "Vegetation", "Edible", "Rock", "Ore", "Metal", "Flesh", "Dirt", "Grass".
+Aged Bamboo Medium Log: Tag, dropChance, dropMinAmount, dropMaxAmount.
+Aged Bamboo Stalk: Tag, offset, minScale, maxScale.
+Aged Bamboo Tall Log: Tag, dropChance, dropMinAmount, dropMaxAmount.
+Aged Bamboo TreeA: Tag, offset, minScale, maxScale.
+Aged Bamboo TreeA2: Tag.
+Aged Bamboo TreeB: Tag, offset, minScale, maxScale.
+Aged Bamboo TreeB2: Tag.
+Alchemy Table: craftTime, energyCost, Tag.
+Alchemy Table Recipe: Script.
+Alert: path.
+Alert_Loop: path.
+Alert_Search: path.
+AllowedGrowthStates: "Teen", "Child".
+Alloy: "Latten".
+AltWallVisibilitySettings: Idle, Activate, Hold, Release, Rearm.
+Amethyst Cluster: Tag, object, minScale, maxScale, weight, minDepth, maxDepth.
+Amethyst Shard: Tag, dropChance, dropMinAmount, dropMaxAmount.
+Amethyst Spire: Tag, object, minScale, maxScale, weight, minDepth, maxDepth.
+Ancient Tooth: Tag.
+Animal Hide: dropChance, dropMinAmount, dropMaxAmount, Tag.
+Animal Horn: dropChance, dropMinAmount, dropMaxAmount, Tag.
+AnimatedGraphics: scale, Offset, model, skeleton.
+Apple Growth Controller: Tag.
+Apple Seed Tree: Tag.
+Apple Tree: Tag, offset, minScale, maxScale.
+Apple Tree Cluster: weight.
+Apple Trees: minScale, maxScale, object, weight, offset.
+Armor Piece: "Bronze Plated Glove".
+Artisan Workbench: spawnOffsetOverride, craftTime, Tag.
+Artisan Workbench Recipe: Script.
+Aspen Tree Cluster: weight.
+Aspen Tree Green: Tag, offset, minScale, maxScale.
+Aspen Tree Orange: Tag, offset, minScale, maxScale.
+Aspen Tree Yellow: Tag, offset, minScale, maxScale.
+Aspen Trees Green: minScale, maxScale, object, weight.
+Aspen Trees Orange: minScale, maxScale, object, weight.
+Aspen Trees Orange Forest: weight.
+Aspen Trees Yellow: minScale, maxScale, object, weight.
+Aspen Trees Yellow Forest: weight.
+Attached: handlerClass.
+Attack: path.
+Attack_Idle: path.
+Back: "Lotus Teeth Leaf".
+BackToDefault: destinationState, animation, blendOutTime.
+Bamboo A: texture.
+Bamboo Anklets: Tag.
+Bamboo Anklets Recipe: Script.
+Bamboo Bracers: Tag.
+Bamboo Bracers Recipe: Script.
+Bamboo Chunk: dropChance, dropMinAmount, dropMaxAmount.
+Bamboo Forest: depositSet, mainMaterialStrength, dayAmbiance, nightAmbiance, geome, skyState, weight.
+Bamboo Shaft: dropChance, dropMinAmount, dropMaxAmount, Tag.
+Bamboo Shaft Conversion: Script.
+Bamboo Spear: Tag.
+Bamboo Spear Breakdown: Script.
+Bamboo Spear Recipe: Script.
+Bamboo Stool: Tag.
+Bamboo Stool Recipe: Script.
+Bamboo Table: Tag.
+Bamboo Table Recipe: Script.
+Bamboo Vest: Tag.
+Bamboo Vest Recipe: Script.
+BambooA: diffuse, normal, scale.
+BambooBiome: Mud, Dirt, Sand, Gravel, Cliff Rock Light, Cliff Rock Dark, Rock, Obsidian.
+Banana: Tag, dropChance, dropMinAmount, dropMaxAmount, offset.
+Banana Bunch: Tag.
+Banana Growth Controller: Tag.
+Banana Hostas: weight.
+Banana Leaf: Tag.
+Banana Tree: Tag, offset.
+Banana Tree A: offset.
+Banana Tree Bunch: Tag, offset.
+Banana Trees: weight.
+Bark Strip: Tag.
+Barren Flat: depositSet, dayAmbiance, nightAmbiance, mainMaterialStrength, geome, skyState.
+Base: "Bamboo Log", "Large Mushroom Cap".
+Bavaria: amplitude, wavelength, roughness, snowHeight, noiseFunction.
+Bayou Caves: caveFunction, wallMaterial, floorMaterial, depthBelowSurface, spacing, horizontalAmplitude, horizontalFrequency, verticalAmplitude, verticalFrequency, minRadius, maxRadius.
+BearRam Spawn: object, weight.
+BearRam Spawn Node: Tag.
+BearRamCub Spawn Node: Tag.
+Bedrock: depositSet, dayAmbiance, nightAmbiance, mainMaterialStrength, geome, skyState, amplitude, wavelength, roughness, snowHeight, stepMultiplier, noiseFunction.
+BedrockBiome: Clay, Dirt, Sand, Gravel, Cliff Rock Light, Cliff Rock Dark, Rock, Obsidian.
+BedrockPlains: Clay, Dirt, Sand, Gravel, Cliff Rock Light, Cliff Rock Dark, Rock, Obsidian.
+BedrockTerraces: Clay, Dirt, Sand, Gravel, Cliff Rock Light, Cliff Rock Dark, Rock, Obsidian.
+Billboard Culling Controller: Tag.
+Binding: "Vines", "Leather Strips".
+Binding1: "Vine Arm Wraps".
+Binding2: "Leather Strips".
+Bindings: "Vines", "Leather Strips".
+Black Clay Brick Recipe: Script.
+Black Dye: Tag.
+Black Dye Recipe: Script.
+Black Rock: dropChance, dropMinAmount, dropMaxAmount, Tag.
+BlendByBoneMask: name.
+BlendByDirection: name, blendSpeed.
+BlendByFall: name, transitionTime.
+BlendByGraph: name, initialState, stateVariable.
+BlendLeaf: name, animation, loop, start_offset, restartOnActivate.
+BlendSlot: name.
+BlendState: name, state_name, transitionTime, initialState.
+BlendTree: root.
+Blocking: Node.
+Blue Boulder: Tag, offset.
+Blue Boulders: object, weight.
+Blue Clay Brick Recipe: Script.
+Blue Cobblestone Conversion: Script.
+Blue Cobblestone Recipe: Script.
+Blue Color: "Cobblestone Blue Clump", "Cliff Rock Dark Clump", "Blue Dye".
+Blue Crystal Cluster: Tag, object, minScale, maxScale, weight, minDepth, maxDepth.
+Blue Crystal Shard: Tag, dropChance, dropMinAmount, dropMaxAmount.
+Blue Crystal Spire: Tag, object, minScale, maxScale, weight, minDepth, maxDepth.
+Blue Dye: Tag.
+Blue Dye Recipe: Script.
+Blue Fairy Ring: weight.
+Blue Fungi Growth Controller: Tag.
+Blue Mushroom: Tag, object, minScale, maxScale, weight, minDepth, maxDepth.
+Blue Mushroom Chunk: dropChance, dropMinAmount, dropMaxAmount, Tag.
+Blue Mushroom Growth Controller: Tag.
+Blue Mushrooms: object, weight, minScale, maxScale.
+Blue Mushrooms Hands: object, weight, minScale, maxScale.
+Blueberries: Tag, dropChance, dropMinAmount, dropMaxAmount.
+Blueberry Bush: Tag, offset, minScale, maxScale.
+Bluebonnets: billboard, density, chance, minangle, maxangle, minscale, maxscale.
+Bone Meal Powder Recipe: Script.
+Bone Necklace: Tag.
+Bone Necklace Recipe: Script.
+Bone Powder: Tag.
+Bones: weight.
+Boulder Cluster: weight.
+Box: trigger, extents, center, mass, convex.
+Break_Item: path.
+Bronze Axe Conversion: Script.
+Bronze Axe Head: Tag.
+Bronze Axe Head Recipe: Script.
+Bronze Axe Pike Recipe: Script.
+Bronze Axe Recipe: Script.
+Bronze Blunt Pike Recipe: Script.
+Bronze Buckle: Tag.
+Bronze Buckle Conversion: Script.
+Bronze Buckle Recipe: Script.
+Bronze Chestplate Recipe: Script.
+Bronze Chisel Recipe: Script.
+Bronze Cudgel Conversion: Script.
+Bronze Cudgel Head: Tag.
+Bronze Cudgel Head Recipe: Script.
+Bronze Cudgel Recipe: Script.
+Bronze Glove Plate: Tag.
+Bronze Glove Plate Recipe: Script.
+Bronze Hammer Conversion: Script.
+Bronze Hammer Head: Tag.
+Bronze Hammer Head Recipe: Script.
+Bronze Hammer Pike Recipe: Script.
+Bronze Hammer Recipe: Script.
+Bronze Headshell Recipe: Script.
+Bronze Hoe Conversion: Script.
+Bronze Hoe Head: Tag.
+Bronze Hoe Head Recipe: Script.
+Bronze Hoe Recipe: Script.
+Bronze Knife Blade: Tag.
+Bronze Knife Blade Recipe: Script.
+Bronze Knife Conversion: Script.
+Bronze Knife Recipe: Script.
+Bronze Long Javelin Recipe: Script.
+Bronze Neck Strand Recipe: Script.
+Bronze Pick Conversion: Script.
+Bronze Pick Head: Tag.
+Bronze Pick Head Recipe: Script.
+Bronze Pick Recipe: Script.
+Bronze Plated Glove: Tag.
+Bronze Plated Glove Conversion: Script.
+Bronze Plated Glove Recipe: Script.
+Bronze Scythe Recipe: Script.
+Bronze Short Javelin Recipe: Script.
+Bronze Shovel Conversion: Script.
+Bronze Shovel Head: Tag.
+Bronze Shovel Head Recipe: Script.
+Bronze Shovel Recipe: Script.
+Bronze Skull Cap: Tag.
+Bronze Skull Cap Conversion: Script.
+Bronze Skull Cap Recipe: Script.
+Bronze Spade Recipe: Script.
+Bronze Spear Conversion: Script.
+Bronze Spear Head: Tag.
+Bronze Spear Head Recipe: Script.
+Bronze Spear Recipe: Script.
+Bronze Sword Blade: Tag.
+Bronze Sword Blade Recipe: Script.
+Bronze Sword Conversion: Script.
+Bronze Sword Recipe: Script.
+Bronze Trowel Recipe: Script.
+Brown Clay Brick Recipe: Script.
+Brown Dye: Tag.
+Brown Dye Recipe: Script.
+Brown Fruit Trees: minScale, maxScale, object, weight.
+Brown Fungi Growth Controller: Tag.
+Brown Geyser: Tag, minScale, maxScale, object, weight, offset, minDepth, maxDepth.
+Brown Grass 1: billboard, density, chance, minangle, maxangle, minscale, maxscale.
+Brown Grass 2: billboard, density, chance, minangle, maxangle, minscale, maxscale.
+Brown Grass 4: billboard, density, chance, minangle, maxangle, minscale, maxscale.
+Brown Grass 8: billboard, density, chance, minangle, maxangle, minscale, maxscale.
+Brown Mushroom: Tag, object, minScale, maxScale, weight, minDepth, maxDepth.
+Brown Mushroom Chunk: dropChance, dropMinAmount, dropMaxAmount, Tag.
+Brown Mushroom Growth Controller: Tag.
+Brown Spikey Grass 1: billboard, density, chance, minangle, maxangle, minscale, maxscale.
+Brown Spikey Grass 2: billboard, density, chance, minangle, maxangle, minscale, maxscale.
+Brown Tall Grass: Tag.
+Bulb Fern: Tag.
+Bulb Fern Bulb: Tag.
+Bulb Fern Leaf: Tag.
+BurnTerrain: time, active, activate.
+Burnt: texture, diffuse, normal, scale.
+Bush Banana A: Tag, offset, minScale, maxScale.
+Bush Banana B: Tag, offset, minScale, maxScale, object, weight, minDepth, maxDepth.
+Bush Banana C: Tag, offset, minScale, maxScale, object, weight, minDepth, maxDepth.
+Bush Berry: Tag, offset, minScale, maxScale.
+Bush ElephantEar A: Tag, offset, minScale, maxScale.
+Bush ElephantEar B: Tag, offset, minScale, maxScale, object, weight, minDepth, maxDepth.
+Bush ElephantEar C: Tag, offset, minScale, maxScale, object, weight, minDepth, maxDepth.
+Bush Hosta A: Tag, offset, minScale, maxScale.
+Bush Hosta B: Tag, offset, minScale, maxScale, object, weight, minDepth, maxDepth.
+Bush Hosta C: Tag, offset, minScale, maxScale, object, weight, minDepth, maxDepth.
+Bush Hosta Edged A: Tag, offset, minScale, maxScale.
+Bush Hosta Edged B: Tag, offset, minScale, maxScale, object, weight, minDepth, maxDepth.
+Bush Hosta Edged C: Tag, offset, minScale, maxScale, object, weight, minDepth, maxDepth.
+Bush Hosta Spotted A: Tag, offset, minScale, maxScale.
+Bush Hosta Spotted B: Tag, offset, minScale, maxScale, object, weight, minDepth, maxDepth.
+Bush Hosta Spotted C: Tag, offset, minScale, maxScale, object, weight, minDepth, maxDepth.
+Bush Paisley Fern A: Tag, offset, minScale, maxScale.
+Bush Paisley Fern B: Tag, offset, minScale, maxScale, object, weight, minDepth, maxDepth.
+Bush Paisley Fern C: Tag, offset, minScale, maxScale, object, weight, minDepth, maxDepth.
+Bush Peacock Fern A: Tag, offset, minScale, maxScale.
+Bush Peacock Fern B: Tag, offset, minScale, maxScale.
+Bush Peacock Fern C: Tag, offset, minScale, maxScale.
+Bush Sprout: Tag, offset, minDepth, maxDepth.
+Bush Young: Tag, offset, minDepth, maxDepth.
+Cabbage Pod: Tag, dropChance, dropMinAmount, dropMaxAmount.
+Cabbage Trap: Tag, offset, minScale, maxScale, object, weight, minDepth, maxDepth.
+Cabbage Trap Leaf Dummy: parentAttachPoint, childAttachPoint.
+Cabbage Trap Leaf Inverted Dummy: parentAttachPoint, childAttachPoint.
+Cabbage Trap Patch: weight.
+Cabbage Trap Seed Recipe: Script.
+Cactus: Tag.
+Cactus Chunk: Tag, dropChance, dropMinAmount, dropMaxAmount.
+Cactus Club: Tag.
+Cactus Club Recipe: Script.
+Cactus Clusters: weight.
+Cage Floor: "Cage Trap Floor".
+Cage Trap Camo: Tag.
+Cage Trap Floor: dropChance, dropMinAmount, dropMaxAmount, Tag.
+Cage Trap Floor Recipe: Script.
+Cage Trap Recipe: Script.
+Cage Trap Wall: dropChance, dropMinAmount, dropMaxAmount, Tag.
+Cage Trap Wall Recipe: Script.
+Cage Walls: "Cage Trap Wall".
+Cancel: destinationState, animation, blendInTime, blendOutTime.
+Cane Stave: Tag, dropChance, dropMinAmount, dropMaxAmount.
+Capsule: Height, Feet, Radius, height, radius.
+Carved Rock Blue: texture.
+Carved Rock Gray: texture.
+Carved Rock Grn: texture.
+CarvedRockBlue: diffuse, normal, scale.
+CarvedRockGray: diffuse, normal, scale.
+CarvedRockGrn: diffuse, normal, scale.
+Cast: path, destinationState, animation.
+Cast_Cancel: path.
+Cast_Hold: path.
+Cast_In: path.
+CastedItem: "Bamboo Vest", "Pumpkin Helmet", "Pumpkin Skull Cap", "Bamboo Anklets".
+Casting: Node.
+Casting2: Node.
+Cat Spawn: object, weight.
+Cat Spawn Node: Tag, offset.
+Cat Spawners: weight.
+Channel: destinationState, animation.
+Channeling: Node.
+Channeling_Hold: path.
+Channeling_In: path.
+Channeling_Out: path.
+CharacterGear: Tag.
+Chase: path.
+Chasing: name, animIndex, maxspeed, acceleration, turnrate.
+Cherries: Tag, dropChance, dropMinAmount, dropMaxAmount, offset.
+Cherry Growth Controller: Tag.
+Cherry Seed Tree: Tag.
+Cherry Seeds: Tag.
+Cherry Seeds Recipe: Script.
+Cherry Tree: Tag, offset, minScale, maxScale.
+Cherry Tree Cluster: weight.
+Cherry Tree Growth Controller: Tag.
+Child: submesh.
+Children: 0, 1.
+Chopped Fruit Wood: texture.
+Chopped Hard Wood: texture.
+Chopped Light Wood: texture.
+Chopped Wood: dropChance, dropMinAmount, dropMaxAmount, Tag.
+Chopped Wood Conversion: Script.
+ChoppedFruitWood: diffuse, normal, scale.
+ChoppedHardWood: diffuse, normal, scale.
+ChoppedLightWood: diffuse, normal, scale.
+Citrine Cluster: Tag, object, minScale, maxScale, weight, minDepth, maxDepth.
+Citrine Shard: Tag, dropChance, dropMinAmount, dropMaxAmount.
+Citrine Spire: Tag, object, minScale, maxScale, weight, minDepth, maxDepth.
+Clay: horizontalScaleX, horizontalScaleZ, verticalScale, frequency, perlinShift, minDepth, maxDepth, texture, diffuse, normal, scale.
+Clay Black: texture.
+Clay Block: texture.
+Clay Blue: texture.
+Clay Brick Recipe: Script.
+Clay Brown: texture.
+Clay Cyan: texture.
+Clay Gray: texture.
+Clay Green: texture.
+Clay Hills: inherit, top.
+Clay Light Blue: texture.
+Clay Light Gray: texture.
+Clay Light Purple: texture.
+Clay Lime: texture.
+Clay Magenta: texture.
+Clay Orange: texture.
+Clay Pink: texture.
+Clay Purple: texture.
+Clay Red: texture.
+Clay White: texture.
+Clay Yellow: texture.
+ClayBlock: diffuse, normal, scale.
+ClayBlockBlack: diffuse, normal, scale.
+ClayBlockBlue: diffuse, normal, scale.
+ClayBlockBrown: diffuse, normal, scale.
+ClayBlockCyan: diffuse, normal, scale.
+ClayBlockGray: diffuse, normal, scale.
+ClayBlockGreen: diffuse, normal, scale.
+ClayBlockLightBlue: diffuse, normal, scale.
+ClayBlockLightGray: diffuse, normal, scale.
+ClayBlockLightPurple: diffuse, normal, scale.
+ClayBlockLime: diffuse, normal, scale.
+ClayBlockMagenta: diffuse, normal, scale.
+ClayBlockOrange: diffuse, normal, scale.
+ClayBlockPink: diffuse, normal, scale.
+ClayBlockPurple: diffuse, normal, scale.
+ClayBlockRed: diffuse, normal, scale.
+ClayBlockWhite: diffuse, normal, scale.
+ClayBlockYellow: diffuse, normal, scale.
+Cliff Rock Dark: inherit, top.
+Cliff Rock Gray: inherit, top.
+Cliff Rock Light: inherit, top.
+CliffA: diffuse, normal, scale.
+CliffB: diffuse, normal, scale.
+CliffC: diffuse, normal, scale.
+Clip Clop Breakdown: Script.
+Clip Clop Recipe: Script.
+Clothing Component: "Leaf Vest".
+Clothing Item: "Wool Shirt".
+Clover: Tag, offset, minScale, maxScale, object, weight, minDepth, maxDepth.
+Clover Patch: weight.
+Clover Small: Tag, offset.
+Clover Small Flower: Tag, offset.
+Clover Smalls: weight.
+Coal: duration, canStart, isConsumed, dropChance, dropMinAmount, dropMaxAmount, horizontalScaleX, horizontalScaleZ, verticalScale, frequency, perlinShift, minDepth, maxDepth, texture, diffuse, normal, scale.
+Coal Burn: texture, diffuse, normal, scale.
+Coal Burn Clump: offset.
+Cobblestone: "Cobblestone", dropChance, dropMinAmount, dropMaxAmount.
+Cobblestone Blue: texture.
+Cobblestone Conversion: Script.
+Cobblestone Gray: texture.
+Cobblestone Green: texture.
+Cobblestone Multi: texture.
+CobblestoneBlue: diffuse, normal, scale.
+CobblestoneGray: diffuse, normal, scale.
+CobblestoneGreen: diffuse, normal, scale.
+CobblestoneMulti: diffuse, normal, scale.
+Coconut: "Coconut Shell", Tag, dropChance, dropMinAmount, dropMaxAmount, offset.
+Coconut Clip Clops: "Percy".
+Coconut Dehusked: offset.
+Coconut Growth Controller: Tag.
+Coconut Half: Tag.
+Coconut Halves Recipe: Script.
+Coconut Seed Tree: Tag.
+Coconut Shell: Tag.
+Coconut Tree A: Tag, offset.
+Coconut Tree B: Tag.
+Coconut Tree Growth Controller: Tag.
+Coconut Trees: weight.
+Cone: trigger, height, radius, material.
+Config: Test, Test2.
+ConnectTo: component, attachpoint.
+Consume: path, destinationState, animation.
+Consume_In: path.
+Consume_Loop: path.
+Consume_Out: path.
+Consuming: Node.
+Cooked Meat Recipe: Script.
+Copper Necklace: Tag.
+Copper Necklace Conversion: Script.
+Copper Necklace Recipe: Script.
+Copper Ore: dropChance, dropMinAmount, dropMaxAmount, horizontalScaleX, horizontalScaleZ, verticalScale, frequency, perlinShift, minDepth, maxDepth, texture.
+CopperOre: diffuse, normal, scale.
+Corpse Pitcher: Tag, offset, minScale, maxScale.
+Corpse Pitcher Cup: Tag.
+Corpse Pitcher Stem: Tag.
+Corpse Pitcher and Hands: weight.
+Cotton: billboard, density, chance, minangle, maxangle, minscale, maxscale.
+Cover: "Leaf".
+CraftSwing: path.
+Craft_Default: path.
+Crafting Rock: craftTime, energyCost, spawnOffsetOverride, Tag, object, weight.
+Crafting Rock Blue: object, weight.
+Crafting Rock Gray: object, weight.
+Crafting Rock Green: object, weight.
+Crafting Rock White: object, weight.
+Crafting Rock Yellow: object, weight.
+Crafting Stump: craftTime, energyCost, spawnOffsetOverride, Tag, object, weight.
+Crafting Tool: category, tier.
+Crude Axe: Tag.
+Crude Axe Recipe: Script.
+Crude Bed: Tag.
+Crude Bed Recipe: Script.
+Crude Chest: Tag.
+Crude Chest Recipe: Script.
+Crude Club Breakdown: Script.
+Crude Door Recipe: Script.
+Crude Hammer: Tag.
+Crude Hammer Recipe: Script.
+Crude Hoe: Tag.
+Crude Hoe Recipe: Script.
+Crude Knife: Tag.
+Crude Knife Breakdown: Script.
+Crude Knife Recipe: Script.
+Crude Pick: Tag.
+Crude Pick Recipe: Script.
+Crude Rock Head Breakdown: Script.
+Crude Rock Heads Conversion: Script.
+Crude Shovel: Tag.
+Crude Shovel Recipe: Script.
+Crude Slingshot: Tag.
+Crude Slingshot Recipe: Script.
+Crude Sword: Tag.
+Crude Sword Recipe: Script.
+Crude Vest Breakdown: Script.
+Crude Workbench: spawnOffsetOverride, craftTime, Tag.
+Crude Workbench Recipe: Script.
+Crystal: "Crystal Shard", "Black Rock", "Froststone Shard", "Citrine Shard", "Firestone Shard".
+Cut Log: Tag.
+Cyan Clay Brick Recipe: Script.
+Cyan Dye: Tag.
+Cyan Dye Recipe: Script.
+Cypress Log: Tag, dropMinAmount, dropMaxAmount, dropChance.
+Cypress Tree Bare: Tag, offset, minScale, maxScale.
+Cypress Tree Moss 1: Tag, offset, minScale, maxScale.
+Cypress Tree Moss 2: Tag, offset, minScale, maxScale.
+Cypress Trees: weight.
+Daffodil: Tag, offset, minScale, maxScale.
+Daffodil Patch: weight.
+Daisy Patch: weight.
+DamageDebuff: class, players, characters, affectDead.
+Dark Green Grass: inherit, top, billboard, billboard1, billboard2, billboard3, billboard4.
+Dark Green Grass Swap: inherit, top, billboard, billboard1, billboard2, billboard3, billboard4.
+Dark Green Grass Thatch Recipe: Script.
+Dark Green Pasture: inherit, top.
+Dark Mountain Grass: inherit, top, billboard, billboard1, billboard2, billboard3.
+Dark Mountain Grass Swap: inherit, top, billboard, billboard1, billboard2, billboard3.
+Dark Terrace Grass: inherit, top, billboard, billboard1, billboard2, billboard3.
+Dark Terrace Grass Swap: inherit, top, billboard, billboard1, billboard2, billboard3.
+DarkGreenThatch: diffuse, normal, scale.
+Data: duration, value, stacks, damage, ticksPerSecond, dropObjectLoot.
+Day: color, intensity.
+Dead Acacia Tree: Tag, offset, minScale, maxScale, object, weight.
+DeadCapsule: Height, Feet, Radius.
+Deadwood: object, weight, minScale, maxScale, minDepth, maxDepth.
+Deadwood Clusters: weight.
+Death: path.
+Death_Left: path.
+Decoration: "Animal Horn", "Tooth".
+Deep Forest: depositSet, mainMaterialStrength, dayAmbiance, nightAmbiance, geome, skyState.
+Deep Forest Hills: amplitude, wavelength, roughness, snowHeight, noiseFunction.
+DeepForestBiome: Mud, Dirt, Sand, Gravel, Cliff Rock Light, Cliff Rock Dark, Rock, Obsidian.
+Default: Node.
+Desert: depositSet, dayAmbiance, nightAmbiance, mainMaterialStrength, geome, skyState.
+Desert Boulder Cluster: weight.
+Desert Caverns: caveFunction, wallMaterial, floorMaterial, minCavernDepth, maxCavernDepth, cavernFrequency, cavernSize.
+Desert Cliffs: amplitude, wavelength, roughness, snowHeight, stepMultiplier, noiseFunction.
+Desert Dunes: amplitude, wavelength, roughness, snowHeight, noiseFunction.
+Desert Surface Channels: caveFunction, wallMaterial, floorMaterial, depthBelowSurface, spacing, horizontalAmplitude, horizontalFrequency, verticalAmplitude, verticalFrequency, minRadius, maxRadius.
+DesertBiome: Sand, Gravel, Cliff Rock Light, Cliff Rock Dark, Rock, Obsidian.
+Diffuse: 0, Geo_Cub_Sabre_Gen01, 1, Geo_Lithari01, Geo_L_Arm01, Geo_R_Arm01, Geo_Head01, Geo_Torso01, Geo_L_Hand01, Geo_R_Hand01, Geo_Stone01, Geo_Hips01, Geo_L_Leg01, Geo_R_Leg01, Geo_L_Foot01, Geo_R_Foot01, Geo_LeafBackpack01, Geo_Belt_Brnz_BeltPouch01, Geo_L_Shoulder_Brnz_Pad01, Geo_Helmet_Bonze01, Geo_Helmet_Pumpkin01, Geo_Helmet_PumpkinB01, 2, "head", "handle", "wrap", "stone", trunk, "head_used", "head_poor", handle, 3, wall, branches.
+Dino Bones: weight.
+Directions: Forward, Left, Right, Backward, Idle, ForwardLeft, ForwardRight, BackLeft, BackRight.
+Dirt: horizontalScaleX, horizontalScaleZ, verticalScale, frequency, perlinShift, minDepth, maxDepth, texture, diffuse, normal, scale.
+Dirt Tilled: texture.
+DirtTilled: diffuse, normal, scale.
+Double Cap Mushroom: Tag, offset, minScale, maxScale.
+Double Cap Mushroom Stem: Tag, dropMinAmount, dropMaxAmount, dropChance.
+Double Cap Mushrooms: weight.
+Dragon Glass: object, weight, minDepth, maxDepth.
+Drift Cordate Gold Leaf Giant Emitter: offset.
+Drift Cordate Green Leaf Giant Emitter: offset.
+Drift Elliptic Gold Leaf Emitter: offset.
+Drift Elliptic Green Leaf Emitter: offset.
+Drift Fluff Emitter: offset.
+Drift FluffyDown Emitter: offset.
+Drift Fungal Gas Cloud Large Emitter: deactivateTimer, offset, emitter.
+Drift Fungal Gas Seep Large Emitter: offset.
+Drift Fungal Gas Seep Small Emitter: offset.
+Drift LeafAcicularGreen Emitter: offset.
+Drift LeafCageTrap Emitter: offset.
+Drift LeafCageTrap2 Emitter: offset.
+Drift MoteMushroomAqua Emitter: offset.
+Drift MoteMushroomGold Emitter: offset.
+Drift MoteMushroomGreen Emitter: offset.
+Drift MoteMushroomRed Emitter: offset.
+Drift Palmate Green Leaf Emitter: offset.
+Drift Wind Fog Emitter: offset.
+Drift Wind Sand Emitter: offset.
+Drift Wind Sand Red Emitter: offset.
+Drift Wind Sand Yellow Emitter: offset.
+Drift Wind Snow Emitter: offset.
+Drifting Fog: object, weight, offset.
+Drifting Sand Red: object, weight.
+Drifting Sand Yellow: object, weight.
+Drifting Snow: object, weight.
+Drivy Large Cluster: Tag, offset, minScale, maxScale.
+Drivy Large Cluster 3 Pink Flowers: Tag, offset, minScale, maxScale.
+Drivy Large Cluster 3 Yellow Flowers: Tag, offset, minScale, maxScale.
+Drivy Large Cluster 4 Pink Flowers: Tag, offset, minScale, maxScale.
+Drivy Large Cluster 4 Yellow Flowers: Tag, offset, minScale, maxScale.
+Drivy Large Multi Cluster 1 Pink Flower: Tag, offset, minScale, maxScale.
+Drivy Multi Cluster 1 Pink Flower: Tag, offset, minScale, maxScale.
+Drivy Multi Cluster 2 Pink Flowers: Tag, offset, minScale, maxScale.
+Drivy Multi Cluster 3 Yellow Flowers: Tag, offset, minScale, maxScale.
+Drivy Multi Cluster 5 Yellow Flowers: Tag, offset, minScale, maxScale.
+Drivy Small Cluster: Tag, offset, minScale, maxScale.
+Drivy Small Cluster 1 Pink Flower: Tag, offset, minScale, maxScale.
+Drivy Small Cluster 1 Yellow Flower: Tag, offset, minScale, maxScale.
+Drivy Small Cluster 2 Yellow Flowers: Tag, offset, minScale, maxScale.
+Durability Potion: Tag.
+Durability Potion Recipe: Script.
+DurabilityDamage: Player, Character, GameObject, Terrain.
+Dye: "Black Dye", "Blue Dye", "Cyan Dye", "Gray Dye", "Green Dye", "Light Blue Dye", "Light Purple Dye", "Light Gray Dye", "Magenta Dye", "Pink Dye", "Orange Dye", "Lime Dye", "Red Dye", "Purple Dye", "White Dye", "Yellow Dye", "Brown Dye".
+Dye 1: "Blue Dye", "Blueberries", "Sand Clump", "Thatch", "Bluebonnet Clump", "Purple Gourd Seeds", "Dirt Clump", "Redberries", "Pink Daisy Petals", "Orange Daisy Petals", "Leaf", "Red Daisy Petals", "Purple Daisy Petals", "White Daisy Petals", "Yellow Daisy Petals", "Red Dye".
+Dye 2: "Brown Dye", "Green Dye".
+Dying: name, animIndex, maxspeed, acceleration, turnrate.
+Edged Hosta Leaf Thatch Recipe: Script.
+Edged Hostas: weight.
+EffectOverTime: ticksPerSecond, player, character, gameObject.
+Elephant Ear Hostas: weight.
+Elephant Ear Leaf: Tag.
+Equipable: name, resource, maxStackCount, minScale, maxScale, icon, category, tier, durability, damageToCharacters, damageToObjects, placementSound, miningEmitter, miningEmitterAlt, handleType, durabilityLossOnCorrect, durabilityLossOnIncorrect, placeWithNoPhysics, orientsToSurface, survivalRotOffset, survivalPosOffset, gridSizeX, gridSizeY, vfSizeX, vfSizeY, vfSizeZ, craftingArchetype, staminaDamage, staminaRegenDelay, attackSpeedModifier, weaponRange, movementSpeedModifier, consumable, impactFailSound.
+Example: jsonFile, Test, Test2.
+Explode: jsonFile, player, character, gameObject, terrain, time, active, abortOnRemove.
+Exploding Pumpkin Attractor: offset, emitter.
+Explosion Sound: name, minDist, maxDist.
+Fabric 1: "Linen Textile Plain", "Leather Patch".
+Fading Grass 10: billboard, density, chance, minangle, maxangle, minscale, maxscale.
+Fading Grass 11: billboard, density, chance, minangle, maxangle, minscale, maxscale.
+Fading Grass 4: billboard, density, chance, minangle, maxangle, minscale, maxscale.
+Fading Grass 5: billboard, density, chance, minangle, maxangle, minscale, maxscale.
+Fading Grass 9: billboard, density, chance, minangle, maxangle, minscale, maxscale.
+Failed Results: "Mad Mushroom Man".
+Femur Bone: Tag, offset, minScale, maxScale.
+Fern Cluster: weight.
+Fernicus: Tag, offset, minScale, maxScale.
+Fire 1 Emitter: offset.
+Fire 1 Trail Emitter: offset.
+Fire Half Emitter: offset.
+Fire Pit: craftTime, Tag.
+Fire Pit Recipe: Script.
+Fire Quarter Emitter: offset.
+FireBall Attractor: offset, emitter.
+FireDebuff: class, players, characters.
+Fireball Neuria Gauntlet: Tag.
+Fireball Neuria Gauntlet Recipe: Script.
+Firestone Cluster: Tag, offset, minScale, maxScale, minDepth, maxDepth, object, weight.
+Firestone Crystal Cluster: weight, object, minScale, maxScale, minDepth, maxDepth.
+Firestone Crystal Spire: object, minScale, maxScale, weight, minDepth, maxDepth.
+Firestone Shard: Tag, dropChance, dropMinAmount, dropMaxAmount.
+Firestone Spire: Tag, offset, minScale, maxScale, minDepth, maxDepth, object, weight.
+First Material: "Bronze Chunks".
+First Ore: "Copper Ore".
+Flames 1 Emitter: offset.
+Flames Half Emitter: offset.
+Flap: path.
+Flask: "Gourd Flask".
+Flat: amplitude, wavelength, roughness, snowHeight, noiseFunction, htDistribution.
+Flat Rock: offsetOverride, craftTime, Tag, offset, object, minScale, maxScale, weight, minDepth, maxDepth.
+Flat Snow: depositSet, dayAmbiance, nightAmbiance, mainMaterialStrength, geome, skyState.
+FlatWorld: Clay, Dirt, Sand, Gravel, Cliff Rock Light, Cliff Rock Dark, Rock, Obsidian.
+Flint: horizontalScaleX, horizontalScaleZ, verticalScale, frequency, perlinShift, minDepth, maxDepth.
+Flint Head: Tag.
+Float LeafLobedOlive Emitter: offset.
+Float LeafTrifoliateGreen Emitter: offset.
+Fly_Idle: path.
+Foothill Caverns: caveFunction, wallMaterial, floorMaterial, minCavernDepth, maxCavernDepth, cavernFrequency, cavernSize.
+Forest Ground: inherit, top, billboard, billboard1, billboard2, billboard3.
+Forest Ground Swap: inherit, top, billboard, billboard1, billboard2, billboard3.
+Forest Mountain Dirt: inherit, top.
+Forest Mountain Moss: inherit, top.
+Forest Mountain Mud: inherit, top.
+Forest Mountains: amplitude, wavelength, roughness, snowHeight, noiseFunction.
+Forest Tall Grass: inherit, top, billboard.
+Forest Tall Grass Swap: inherit, top, billboard.
+Forked Stick: dropChance, dropMinAmount, dropMaxAmount, Tag.
+Forked Stick Conversion: Script.
+Fossilized Tooth: Tag.
+Freeze Blast Attractor: offset, emitter.
+Frond: Tag.
+Froststone Cluster: Tag, object, weight, minScale, maxScale, minDepth, maxDepth.
+Froststone Shard: Tag, dropChance, dropMinAmount, dropMaxAmount.
+Froststone Spire: Tag, object, weight, minScale, maxScale, minDepth, maxDepth.
+Froth Blue 1 Emitter: offset.
+Froth Blue Quarter Emitter: offset.
+Froth Blue Rise 1 Emitter: offset.
+Froth Orange Quarter Emitter: offset.
+Froth Red Quarter Emitter: offset.
+Froth Yellow Quarter Emitter: offset.
+Frozen Cliffs: amplitude, wavelength, roughness, snowHeight, stepMultiplier, noiseFunction.
+Frozen Mesa Caverns: caveFunction, wallMaterial, floorMaterial, minCavernDepth, maxCavernDepth, cavernFrequency, cavernSize.
+Frozen Mesa Surface Channels: caveFunction, wallMaterial, floorMaterial, depthBelowSurface, spacing, horizontalAmplitude, horizontalFrequency, verticalAmplitude, verticalFrequency, minRadius, maxRadius.
+Frozen Mud: horizontalScaleX, horizontalScaleZ, verticalScale, frequency, perlinShift, minDepth, maxDepth, texture.
+FrozenDebuff: class, players, characters, affectDead.
+FrozenMud: diffuse, normal, scale.
+Fruit: "Melon", "Red Apple", "Orange Pumpkin", "Purple Gourd", "Orange", "Cherries", "Coconut".
+Fruit LeafElliptic Green Emitter: offset.
+Fruit Tree Brown: Tag, offset, minScale, maxScale.
+Fruit Tree Gold: Tag, offset, minScale, maxScale.
+Fruit Tree Green: Tag, offset, minScale, maxScale.
+Fruit Tree Orange: Tag, offset, minScale, maxScale.
+FruitWoodLog: diffuse, normal, scale.
+Fruitwood Plank: dropChance, dropMinAmount, dropMaxAmount.
+Fruitwood Sapling: Tag, offset, minScale, maxScale, object, weight.
+Fruitwood Saplings: object, weight, minScale, maxScale.
+Fuel Potion: Tag.
+Fuel Potion Conversion: Script.
+Fuel Potion Recipe: Script.
+Gear: "Pumpkin Helmet", "Pumpkin Skull Cap", "Leaf Vest", "Hide Vest", "Goat Skins", "Bamboo Vest", "Bone Necklace", "Vine Arm Wraps", "Wood Bracers", "Bamboo Bracers", "Wood Kneepads", "Bamboo Anklets", "Small Wood Shield", "Crude Rock Head".
+Generation: version.
+Geo_Cat_Sabre_WCollar01: 0, 1, 2, 3.
+Geo_Cogat_WCollar01: 0, 1, 2.
+Geo_Cub_Sabre_Gen01: 0.
+Geo_Cub_Sabre_Gen_WCollar01: 0, 1, 2.
+Geo_GoatBaby_WCollar01: 0, 1, 2.
+Geo_Goat_WCollar01: 0, 1, 2.
+Geo_Hair01: 0, 1, 2, 3, 4, 5, 6, 7.
+Geo_Hair02: 0, 1, 2, 3, 4, 5, 6, 7.
+Geo_Hair03: 0, 1, 2, 3, 4, 5, 6, 7.
+Geo_Hair04: 0, 1, 2, 3, 4, 5, 6, 7.
+Geo_Hair05: 0.
+Geo_Hair06: 0.
+Geo_Hair07: 0.
+Geo_Hair08: 0, 1, 2, 3, 4, 5, 6, 7.
+Geo_Hair09: 0, 1, 2, 3, 4, 5, 6, 7.
+Geo_Hips_Brnz_Pants01: 0, 1.
+Geo_Hips_Skirt01: 0, 1, 2.
+Geo_L_Arm_BambooGuard01: 0, 1.
+Geo_L_Arm_BambooShield01: 0, 1.
+Geo_L_Arm_VineWrap01: 0, 1.
+Geo_L_Arm_WoodGuard01: 0, 1.
+Geo_L_Foot_Anklet01: 0, 1.
+Geo_L_Hand_BronzeGauntlet01: 0, 1, 2.
+Geo_L_Hand_FireGauntlet01: 0, 1, 2, 3.
+Geo_L_Hand_IceGauntlet01: 0, 1, 2, 3.
+Geo_L_Leg_CoconutKneepad01: 0, 1.
+Geo_R_Arm_BambooGuard01: 0, 1.
+Geo_R_Arm_Brnz_ArmWrap01: 0, 1.
+Geo_R_Arm_VineWrap01: 0, 1.
+Geo_R_Arm_WoodGuard01: 0, 1.
+Geo_R_Foot_Anklet01: 0, 1.
+Geo_R_Leg_CoconutKneepad01: 0, 1.
+Geo_Torso_Brnz_Shirt01: 0, 1.
+Geo_Torso_Brnz_Tunic01: 0, 1.
+Geo_Torso_Jacket01: 0, 1, 2.
+Geo_Torso_JacketCollar01: 0, 1, 2, 3.
+Geo_Torso_Necklace01: 0, 1.
+Geo_Torso_NecklaceCopper01: 0, 1.
+Geo_Torso_Onesie01: 0, 1.
+Geo_Torso_Vest01: 0, 1.
+Geyser Emitter: offset.
+Ghost Fairy Ring: weight.
+Ghost Fungi Growth Controller: Tag.
+Ghost Mushroom: Tag, object, minScale, maxScale, weight, minDepth, maxDepth, offset.
+Ghost Mushroom Chunk: dropChance, dropMinAmount, dropMaxAmount, Tag.
+Ghost Mushroom Growth Controller: Tag.
+Giant Ice Holes: caveFunction, wallMaterial, floorMaterial, depthBelowSurface, spacing, horizontalAmplitude, horizontalFrequency, verticalAmplitude, verticalFrequency, minRadius, maxRadius.
+Giant Obelisk: Tag.
+Glint Emitter: offset, offsetFromOrigin.
+Glow: 0, Geo_Cub_Sabre_Gen_WCollar01, Geo_Cub_Sabre_Gen01, 1, Geo_Lithari01, Geo_Head01, Geo_Stone01, 2.
+Goat Skins: Tag.
+Goat Skins Recipe: Script.
+Goat Skull: dropChance, dropMinAmount, dropMaxAmount, Tag.
+Goat Spawn Node: Tag, offset.
+Goat Spawners: weight.
+Gold Fruit Trees: minScale, maxScale, object, weight.
+Gold Ore: horizontalScaleX, horizontalScaleZ, verticalScale, frequency, perlinShift, minDepth, maxDepth, texture.
+GoldOre: diffuse, normal, scale.
+Gourd Flask: Tag.
+Gourd Flask Recipe: Script.
+Gourd Shell: Tag.
+Gourd Shell & Seeds Recipe: Script.
+Gourd Tool Breakdown: Script.
+Gourd Torch: Tag.
+Gourd Torch Recipe: Script.
+Gourd Vine: Tag, offset, minScale, maxScale.
+Gourd Vine Buds: Tag, offset.
+Gourd Vine Buds With No Emissive: Tag.
+Gourd Vine Shoots: Tag, offset.
+Gourd Vine Shoots With No Emissive: Tag.
+Gourd Vines: weight.
+Grass 1: billboard, density, chance, minangle, maxangle, minscale, maxscale.
+Grass 11: billboard, density, chance, minangle, maxangle, minscale, maxscale.
+Grass 2: billboard, density, chance, minangle, maxangle, minscale, maxscale.
+Grass 3: billboard, density, chance, minangle, maxangle, minscale, maxscale.
+Grass 4: billboard, density, chance, minangle, maxangle, minscale, maxscale.
+Grass 5: billboard, density, chance, minangle, maxangle, minscale, maxscale.
+Grass 7: billboard, density, chance, minangle, maxangle, minscale, maxscale.
+Grass 8: billboard, density, chance, minangle, maxangle, minscale, maxscale.
+Grass 9: billboard, density, chance, minangle, maxangle, minscale, maxscale.
+Grass with Bluebonnets: inherit, top, billboard, billboard1, billboard2, billboard3.
+Grass with Bluebonnets Swap: inherit, top, billboard, billboard1, billboard2, billboard3.
+Grass with Cotton: inherit, top, billboard2.
+Grass with Cotton Swap: inherit, top, billboard2.
+Grass with Oat: inherit, top, billboard.
+Grass with Oat Swap: inherit, top, billboard.
+Grass with Wheat: inherit, top, billboard.
+Grass with Wheat Swap: inherit, top, billboard.
+GrassA: diffuse, normal, scale.
+GrassB: diffuse, normal, scale.
+GrassC: diffuse, normal, scale.
+GrassD: diffuse, normal, scale.
+Gravel: horizontalScaleX, horizontalScaleZ, verticalScale, frequency, perlinShift, minDepth, maxDepth, texture, diffuse, normal, scale.
+Gray Boulder: Tag.
+Gray Boulders: object, weight.
+Gray Clay Brick Recipe: Script.
+Gray Cobblestone Conversion: Script.
+Gray Cobblestone Recipe: Script.
+Gray Color: "Cobblestone Gray Clump", "Cliff Rock Gray Clump".
+Gray Dye: Tag.
+Gray Dye Recipe: Script.
+Graze_In: path.
+Graze_Loop: path.
+Graze_Out: path.
+Green Boulder: Tag.
+Green Boulders: object, weight, minDepth, maxDepth.
+Green Clay Brick Recipe: Script.
+Green Cobblestone Conversion: Script.
+Green Cobblestone Recipe: Script.
+Green Color: "Cobblestone Green Clump", "Cliff Rock Light Clump", "Gray Dye", "Green Dye".
+Green Dye: Tag.
+Green Dye Recipe: Script.
+Green Fruit Trees: minScale, maxScale, object, weight.
+Green Hills: inherit, top.
+Green Terrace Grass: inherit, top, billboard, billboard1, billboard2.
+Green Terrace Grass Swap: inherit, top, billboard, billboard1, billboard2.
+Green Thorny Vines: Tag.
+Green Valley: amplitude, wavelength, roughness, snowHeight, noiseFunction, htDistribution.
+Green Vine: DisplayName, Tag, offset, minScale, maxScale.
+Green Vine Melons: Tag, offset.
+Green Vine Pumpkins: Tag, offset, minScale, maxScale.
+Greens: Tag, dropMaxAmount, dropMinAmount, dropChance.
+Grow LeafElliptic Green Emitter: offset.
+Grow LeafGourd Green Emitter: offset.
+Growing Blue Berry: Tag.
+Growing Blue Mushroom Seed: Tag.
+Growing Brown Mushroom Seed: Tag.
+Growing Cherry Seed Tree: Tag.
+Growing Coconut Seed Tree: Tag.
+Growing Fruit Tree Green: Tag.
+Growing Ghost Mushroom Seed: Tag.
+Growing Melon Seed Vine: Tag.
+Growing Orange Mushroom Seed: Tag.
+Growing Orange Seed Tree: Tag.
+Growing Pink Mushroom Seed: Tag.
+Growing Pumpkin Seed Vine: Tag.
+Growing Purple Gourd Seed Vine: Tag.
+Growing Purple Mushroom Seed: Tag.
+Growing Red Apple Seed Tree: Tag.
+Growing Red Berry: Tag.
+Growing Red Mushroom Seed: Tag.
+Growing Shroom Hand Seed: Tag.
+Growing Silver Mushroom Seed: Tag.
+Grown Blue Mushroom: Tag.
+Grown Brown Mushroom: Tag.
+Grown Ghost Mushroom: Tag.
+Grown Orange Mushroom: Tag.
+Grown Pink Mushroom: Tag.
+Grown Purple Mushroom: Tag.
+Grown Red Mushroom: Tag.
+Grown Shroom Hand: Tag.
+Grown Silver Mushroom: Tag.
+Growth Potion: Tag.
+Growth Potion Recipe: Script.
+Gust Wind Fog Emitter: offset.
+Gust Wind Sand Red Emitter: offset.
+Gust Wind Sand Yellow Emitter: offset.
+Gust Wind Snow Emitter: offset.
+Gusting Fog: object, weight, offset.
+Gusting Sand Red: object, weight.
+Gusting Sand Yellow: object, weight.
+Gusting Snow: object, weight.
+Halloween Town: depositSet, dayAmbiance, nightAmbiance, mainMaterialStrength, geome, skyState.
+Handle: "Forked Stick", archetype, default, useAsHandAtch, "Hardened Wood Shaft".
+HandslotItemContainer: Tag.
+HardWoodLog: diffuse, normal, scale.
+Hardened Wood: dropChance, dropMinAmount, dropMaxAmount, Tag.
+Hardened Wood Conversion: Script.
+Hardened Wood Handle: Tag.
+Hardened Wood Handle Conversion: Script.
+Hardened Wood Handle Recipe: Script.
+Hardened Wood Recipe: Script.
+Hardened Wood Shaft: Tag.
+Hardened Wood Shaft Conversion: Script.
+Hardened Wood Shaft Recipe: Script.
+Hardwood Plank: dropChance, dropMinAmount, dropMaxAmount.
+Hardwood Sapling: Tag, offset, minScale, maxScale.
+Hardwood Saplings: object, weight, minScale, maxScale.
+Haunted Spires: depositSet, dayAmbiance, nightAmbiance, mainMaterialStrength, geome, skyState.
+Haunted Trenches: depositSet, mainMaterialStrength, dayAmbiance, nightAmbiance, geome, skyState.
+Head: "Bronze Headshell", "Crude Hammer", "Crude Pick", "Crude Axe", "Crude Hoe", "Crude Shovel", "Crude Knife", "Wood Spear", "Bamboo Spear", "Crude Sword", "Club", "Jagged Rock", "Small Rock Spire", "Round Rock", archetype, attachpoint, default, "Cactus Chunk", "Loose Pebbles", "Knapped Rock Spire".
+Head_Shake: path.
+Health Potion: Tag.
+Health Potion Recipe: Script.
+Helmet: "Pumpkin Helmet", "Pumpkin Skull Cap".
+Hide Vest: Tag.
+Hide Vest Recipe: Script.
+Hoe: destinationState, animation.
+Hoe_In: path.
+Hoe_Loop: path.
+Hoe_Out: path.
+Hoeing: Node.
+Hold: destinationState, animation, blendInTime, blendOutTime.
+HoldPotion: destinationState, animation.
+Holding: Node.
+HoldingPotion: Node.
+Hollow Oak Log: Tag, offset.
+Hosta Edged Leaf: dropChance, dropMinAmount, dropMaxAmount.
+Hosta Leaf: dropChance, dropMinAmount, dropMaxAmount.
+Hosta Spotted Leaf: dropChance, dropMinAmount, dropMaxAmount.
+HostaLeafEdgedThatch: diffuse, normal, scale.
+HostaLeafSpottedThatch: diffuse, normal, scale.
+HostaLeafThatch: diffuse, normal, scale.
+Hostas: weight.
+Hswing: destinationState, animation, blendInTime.
+Hswing_In: path.
+Hswing_Loop: path.
+Hswing_Out: path.
+Hswinging: Node.
+Humerus Bone: Tag, offset, minScale, maxScale.
+Hunger: maxHunger, regenPerSecond.
+Hurt: path.
+Hurt_2H: path.
+Hurt_Right: path.
+Husked Coconut: Tag.
+Ice Blast Neuria Gauntlet: Tag.
+Ice Blast Neuria Gauntlet Recipe: Script.
+Ice Caves: caveFunction, wallMaterial, floorMaterial, depthBelowSurface, spacing, horizontalAmplitude, horizontalFrequency, verticalAmplitude, verticalFrequency, minRadius, maxRadius.
+Ice Cliffs: depositSet, dayAmbiance, nightAmbiance, mainMaterialStrength, geome, skyState.
+Ice Knoll A: Tag, offset, minScale, maxScale.
+Ice Knoll B: Tag, offset, minScale, maxScale.
+Ice Knoll Cluster 1: weight.
+Ice Knoll Cluster 2: weight.
+Ice Mountains: depositSet, dayAmbiance, nightAmbiance, geome, skyState, amplitude, wavelength, roughness, snowHeight, noiseFunction.
+IceCliffsBiome: Snow, Dirt, Sand, Gravel, Cliff Rock Light, Cliff Rock Dark, Rock, Obsidian.
+IceMountains: Cliff Rock Light, Cliff Rock Dark, Rock, Obsidian.
+Icehill Caverns: caveFunction, wallMaterial, floorMaterial, minCavernDepth, maxCavernDepth, cavernFrequency, cavernSize.
+Iceroot: Tag, offset.
+Iceroot Leaves: Tag, dropMaxAmount, dropMinAmount, dropChance.
+Idle: name, animIndex, maxspeed, acceleration, turnrate, path.
+Idle_Misc: path.
+Idle_Shield: path.
+Idle_Two_Handed: path.
+Idle_Two_Handed_Left: path.
+Idle_Two_Handed_Left_Mask: path.
+Idle_Two_Handed_Mask: path.
+Iron Ore: horizontalScaleX, horizontalScaleZ, verticalScale, frequency, perlinShift, minDepth, maxDepth, texture.
+IronOre: diffuse, normal, scale.
+Item: "Chopped Wood", "Wood Plank", "Wood Branch", "Stacked Wood", "Loose Pebbles", "Cobblestone Clump", "Cliff Rock Gray Clump", "Cliff Rock Dark Clump", "Cliff Rock Light Clump", "Hardened Wood Shaft", "Long Shaft", "Dark Green Clump", "Light Green Clump", "Tan Clump", "Sat Green Clump", "Hosta Edged Leaf", "Hosta Leaf", "Hosta Spotted Leaf", "Clay Clump", "Clay Brick".
+ItemContainer: Tag.
+ItemHSwing: path.
+ItemIdle: path.
+ItemVSwing: path.
+Item_2H_H_Swing: path.
+Item_2H_Left_H_Swing: path.
+Item_2H_Left_V_Swing: path.
+Item_2H_V_Swing: path.
+Jagged Rock: Tag, dropChance, dropMinAmount, dropMaxAmount, object, weight, minScale, maxScale, minDepth, maxDepth.
+Joshua Tree A: Tag, offset, minScale, maxScale.
+Joshua Tree B: Tag, offset, minScale, maxScale.
+Joshua Tree C: Tag, offset, minScale, maxScale.
+Joshua Tree D: Tag, offset, minScale, maxScale.
+Joshua Tree E: Tag, offset, minScale, maxScale.
+Joshua Tree Log Large: Tag, dropChance, dropMinAmount, dropMaxAmount.
+Joshua Tree Log Medium: Tag, dropChance, dropMinAmount, dropMaxAmount.
+Joshua Tree Log Small: Tag, dropChance, dropMinAmount, dropMaxAmount.
+Joshua Trees: weight.
+Jump_End_Two_Handed_Left: path.
+Jump_Idle_Land: path.
+Jump_Land: path.
+Jump_Land_2hnd_Rt: path.
+Jump_Land_Shield: path.
+Jump_Land_Two_Handed_Left: path.
+Jump_Land_Wpn: path.
+Jump_Loop: path.
+Jump_Loop_2hnd_Rt: path.
+Jump_Loop_Shield: path.
+Jump_Loop_Two_Handed: path.
+Jump_Loop_Two_Handed_Left: path.
+Jump_Loop_Wpn: path.
+Jump_Run_Bk_Land: path.
+Jump_Run_Fwd_Land: path.
+Jump_Run_Lf_Land: path.
+Jump_Run_Rt_Land: path.
+Jump_Start: path.
+Jump_Start_2hnd_Rt: path.
+Jump_Start_Shield: path.
+Jump_Start_Two_Handed: path.
+Jump_Start_Two_Handed_Left: path.
+Jump_Start_Wpn: path.
+Jump_Walk_Bk_Land: path.
+Jump_Walk_Fwd_Land: path.
+Jump_Walk_Lf_Land: path.
+Jump_Walk_Rt_Land: path.
+Jungle: depositSet, mainMaterialStrength, dayAmbiance, nightAmbiance, geome, skyState.
+Jungle Channels: caveFunction, wallMaterial, floorMaterial, depthBelowSurface, spacing, horizontalAmplitude, horizontalFrequency, verticalAmplitude, verticalFrequency, minRadius, maxRadius.
+Jungle Cliffs: amplitude, wavelength, roughness, snowHeight, stepMultiplier, noiseFunction.
+JungleBiome: Mud, Dirt, Sand, Gravel, Cliff Rock Light, Cliff Rock Dark, Rock, Obsidian.
+JungleGenerator: Mud, Dirt, Sand, Gravel, Cliff Rock Light, Cliff Rock Dark, Rock, Obsidian.
+Kid Spawn Node: Tag.
+Knapped Rock Spire: Tag, dropChance, dropMinAmount, dropMaxAmount.
+Large Bronze Tool Breakdown: Script.
+Large Crude Tool Breakdown: Script.
+Large Fruit Tree Log: Tag.
+Large Mushroom Cap: Tag, dropMinAmount, dropMaxAmount, dropChance.
+Large Obelisk: Tag.
+Large Torch: Tag.
+Large Torch Recipe: Script.
+Large Torch at Fire Pit Recipe: Script.
+Latten: Tag.
+Latten Conversion: Script.
+Latten Recipe: Script.
+Latten from Chunks Recipe: Script.
+Lay_In: path.
+Lay_Out: path.
+Laying: path.
+Leaf: "Leaf".
+Leaf Backpack: Tag.
+Leaf Backpack Recipe: Script.
+Leaf Canopy: Tag.
+Leaf Canopy Recipe: Script.
+Leaf Vest: Tag.
+Leaf Vest Breakdown: Script.
+Leaf Vest Recipe: Script.
+Leather: "Animal Hide".
+Leather Bellows: Tag.
+Leather Bellows Recipe: Script.
+Leather Binding: "Leather Strips".
+Leather Bindings: "Leather Strips".
+Leather Bridle Recipe: Script.
+Leather Pads: Tag.
+Leather Pads Recipe: Script.
+Leather Patch Recipe: Script.
+Leather Resource: "Leather Patch", "Animal Hide".
+Leather Saddle Recipe: Script.
+Leather Strips: Tag.
+Leather Strips Recipe: Script.
+Leaves: "Leaf".
+Legs: "Long Shaft".
+Light: "Purple Gourd", lightRadius, lightOffset, lightColor.
+Light Aura Orange Emitter: offset.
+Light Blue Clay Brick Recipe: Script.
+Light Blue Dye: Tag.
+Light Blue Dye Recipe: Script.
+Light Gray Clay Brick Recipe: Script.
+Light Gray Dye: Tag.
+Light Gray Dye Recipe: Script.
+Light Green Grass: inherit, top, billboard, billboard1.
+Light Green Grass Swap: inherit, top, billboard, billboard1.
+Light Green Grass Thatch Recipe: Script.
+Light Hosta Leaf Thatch Recipe: Script.
+Light Purple Clay Brick Recipe: Script.
+Light Purple Dye: Tag.
+Light Purple Dye Recipe: Script.
+LightFlickers: active, inactive.
+LightGreenThatch: diffuse, normal, scale.
+LightRadius: active, inactive.
+LightWoodLog: diffuse, normal, scale.
+Lighting Controller: Tag.
+Lightwood Sapling: Tag, object, weight, minScale, maxScale.
+Lightwood Saplings: object, weight, minScale, maxScale.
+Lilly Nut: Tag.
+Lilly Pad: Tag.
+Lilly Pad Nut: Tag, offset, minScale, maxScale.
+Lilly Pad Nuts: object, weight, minScale, maxScale, minDepth, maxDepth.
+Lime Clay Brick Recipeedw: Script.
+Lime Dye: Tag.
+Lime Dye Recipe: Script.
+Limestone: horizontalScaleX, horizontalScaleZ, verticalScale, frequency, perlinShift, minDepth, maxDepth.
+Linen Arm Wraps: Tag.
+Linen Arm Wraps Conversion: Script.
+Linen Arm Wraps Recipe: Script.
+Linen Gear Breakdown: Script.
+Linen Textile Plain Recipe: Script.
+Linen Tunic: Tag.
+Linen Tunic Conversion: Script.
+Linen Tunic Recipe: Script.
+Log Fruitwood: texture.
+Log Hardwood: texture.
+Log Lightwood: texture.
+Long Handle: "Long Shaft".
+Long Shaft: "Long Shaft".
+Long Shaft Breakdown: Script.
+Loom: craftTime, spawnOffsetOverride, Tag.
+Loom Recipe: Script.
+Loose Pebbles: Tag, dropChance, dropMinAmount, dropMaxAmount.
+Loose Pebbles Conversion: Script.
+Lotus Chair: Tag.
+Lotus Chair Recipe: Script.
+Lotus Teeth: Tag, offset, minScale, maxScale, object, weight, minDepth, maxDepth.
+Lotus Teeth Cluster: weight.
+Lotus Teeth Core: Tag, dropChance, dropMinAmount, dropMaxAmount.
+Lotus Teeth Leaf: Tag, dropChance, dropMinAmount, dropMaxAmount.
+LuaData: craftingActionName, craftingDisplayName, priority, stackResults, energyCost, craftTime, unconsumedDamage, repairPercentage.
+Magenta Clay Brick Recipe: Script.
+Magenta Dye: Tag.
+Magenta Dye Recipe: Script.
+Magic FireBall Burnt Emitter: deactivateTimer.
+Magic FireBall Emitter: offset.
+Magic FireBall Trail Emitter: offset.
+Magic Ice Cone Emitter: offset.
+MamaCat Spawn Node: Tag.
+MamaGoat Spawn Node: Tag.
+Maple Tree: Tag, offset, minScale, maxScale.
+Maple Trees: object, weight.
+Mask: "Bn_Necka01", "Bn_Neckb01", "Bn_Neckc01", "Bn_Head01", "Bn_Jaw", "Bn_L_Ear01", "Bn_R_Ear01", "Bn_Sp_e01", "Bn_Sp_d01", "Bn_Neck_a01", "Bn_Neck_b01", "Bn_Neck_c01", "Bn_Jaw01", "Bn_R_Shoulder01", "Bn_R_Leg_FrontA01", "Bn_R_Leg_FrontB01", "Bn_R_Leg_FrontPaw01", "Bn_R_Leg_FrontToe01", \\ "Bn_Sp_e01", \\ "Bn_Sp_d01", \\ "Bn_Neck_a01", \\ "Bn_Neck_b01", \\ "Bn_Neck_c01", \\ "Bn_Head01", \\ "Bn_Jaw01", \\ "Bn_L_Ear01", \\ "Bn_R_Ear01", "Bn_R_Shlder01", "Bn_R_Arm01", "Bn_R_Elbow01", "Bn_R_4Arm01", "Bn_R_Twist01", "Bn_R_Wrist01", "Bn_R_ThumbRoot01", "Bn_R_ThumbA01", "Bn_R_ThumbB01", "Bn_R_MidA01", "Bn_R_MidB01", "Bn_R_MidC01", "Bn_R_PinkA01", "Bn_R_PinkB01", "Bn_R_PinkC01", "Bn_R_PointA01", "Bn_R_PointB01", "Bn_R_PointC01", "Bn_L_Shlder01", "Bn_L_Arm01", "Bn_L_Elbow01", "Bn_L_4Arm01", "Bn_L_Twist01", "Bn_L_Wrist01", "Bn_L_ThumbRoot01", "Bn_L_ThumbA01", "Bn_L_ThumbB01", "Bn_L_MidA01", "Bn_L_MidB01", "Bn_L_MidC01", "Bn_L_PinkA01", "Bn_L_PinkB01", "Bn_L_PinkC01", "Bn_L_PointA01", "Bn_L_PointB01", "Bn_L_PointC01", "Bn_Tool01", "Bn_SpB01", "Bn_SpC01", "Bn_SpD01", "Bn_SpE01", "Bn_Neck01", "Bn_L_ThumbRt01", "Bn_L_ThumbC01", "Bn_L_ThumbD01", "Bn_L_PointD01", "Bn_L_PointE01", "Bn_L_PointF01", "Bn_L_MidD01", "Bn_L_MidE01", "Bn_L_MidF01", "Bn_L_PinkyRt01", "Bn_L_PinkyA01", "Bn_L_PinkyB01", "Bn_L_PinkyC01", "Bn_L_PinkyD01", "Bn_L_PinkyE01", "Bn_L_PinkyF01".
+MaterialLayers: "Snow", "Frozen Rock", "Cliff Rock Dark", "Rock", "Obsidian", "Mud", "Dirt", "Cliff Rock Light", "Clay", "Gravel", "Desert Rock", "Sand", "Sandstone", "Painted Rock", "Mesa Rock", "White Sand".
+Meat: "Raw Meat".
+Medium Fruit Tree Log: Tag, dropChance, dropMinAmount, dropMaxAmount.
+Melon: Tag, offset.
+Melon Growth Controller: Tag.
+Melon Seed Vine: Tag.
+Melon Seeds: Tag.
+Melon Seeds Recipe: Script.
+Melon Vine Growth Controller: Tag.
+Melon Vines: weight.
+Mesa: depositSet, dayAmbiance, nightAmbiance, mainMaterialStrength, geome, skyState, texture, diffuse, normal, scale.
+Mesa Caverns: caveFunction, wallMaterial, floorMaterial, minCavernDepth, maxCavernDepth, cavernFrequency, cavernSize.
+Mesa Rock: inherit, side.
+Mesa Surface Channels: caveFunction, wallMaterial, floorMaterial, depthBelowSurface, spacing, horizontalAmplitude, horizontalFrequency, verticalAmplitude, verticalFrequency, minRadius, maxRadius.
+MesaB: texture, diffuse, normal, scale.
+MesaBiome: Clay, Dirt, Sand, Gravel, Cliff Rock Light, Cliff Rock Dark, Rock, Obsidian.
+Mesh: mass, convex, material, mesh, decompose, name.
+Metal: "Latten".
+Metal Clasp: "Bronze Buckle".
+Metal Plate: "Bronze Headshell", "Bronze Chestplate".
+Mist 1 Emitter: offset.
+Mixed Drivy Cluster: weight.
+Model Viewer Axis: Tag.
+ModificationInput: "modificationType", "dimensions", "radius", "brushType".
+ModifiedMaterial: baseMaterial, minAngle, maxAngle, placementSize, maxHeight, minHeight.
+ModifyPhysics: simulate, motion.
+ModifyVisibility: render.
+More Wood: "Chopped Wood".
+MorphGraphics: scale, model, Offset.
+MossDirt: diffuse, normal, scale.
+Mossy Dirt: inherit, top.
+Mount: "Skull Stick".
+Mountain Caves: caveFunction, wallMaterial, floorMaterial, depthBelowSurface, spacing, horizontalAmplitude, horizontalFrequency, verticalAmplitude, verticalFrequency, minRadius, maxRadius.
+Mountain Grass: inherit, top, billboard, billboard1.
+Mountain Grass Swap: inherit, top, billboard, billboard1.
+Mountain Green Grass: inherit, top, billboard, billboard1, billboard2.
+Mountain Green Grass Swap: inherit, top, billboard, billboard1, billboard2.
+MountainPineyWoodsBiome: Dirt, Sand, Gravel, Cliff Rock Light, Cliff Rock Dark, Rock, Obsidian.
+Mountainous: amplitude, wavelength, roughness, snowHeight, noiseFunction.
+Mountains: depositSet, dayAmbiance, nightAmbiance, geome, skyState, Cliff Rock Light, Cliff Rock Dark, Rock, Obsidian.
+MountainsJungle: Mud, Dirt, Sand, Gravel, Cliff Rock Light, Cliff Rock Dark, Rock, Obsidian.
+MountainsPlains: Clay, Dirt, Sand, Gravel, Cliff Rock Light, Cliff Rock Dark, Rock, Obsidian.
+Mud: horizontalScaleX, horizontalScaleZ, verticalScale, frequency, perlinShift, minDepth, maxDepth, texture, diffuse, normal, scale.
+Multi-Colored Cobblestone Conversion: Script.
+Mushroom Bed: Tag.
+Mushroom Bed Recipe: Script.
+Mushroom Man Spawn Node: Tag.
+Mushroom Men: object, weight.
+Mushrooom Hand Growth Controller: Tag.
+Natural Flat: depositSet, dayAmbiance, nightAmbiance, mainMaterialStrength, geome, skyState.
+Neck Strand: "Bronze Neck Strand".
+Necklace: "Bone Necklace".
+Nest: Tag.
+NetworkedItemContainer: Tag.
+Night: color, intensity.
+Nightshade: billboard, density, chance, minangle, maxangle, minscale, maxscale.
+NoShield: Node.
+Normal: 0, Geo_Cub_Sabre_Gen_WCollar01, Geo_Cub_Sabre_Gen01, Geo_Lithari01, Geo_L_Arm01, Geo_R_Arm01, Geo_Head01, Geo_Torso01, Geo_L_Hand01, Geo_R_Hand01, Geo_Stone01, Geo_Hips01, Geo_L_Leg01, Geo_R_Leg01, Geo_L_Foot01, Geo_R_Foot01, Geo_LeafBackpack01, Geo_Hair01, Geo_Hair02, Geo_Hair03, Geo_Hair04, Geo_Hair05, Geo_Hair06, Geo_Hair07, Geo_Hair08, Geo_Hair09, Geo_Belt_Brnz_BeltPouch01, Geo_L_Shoulder_Brnz_Pad01, Geo_Helmet_Bonze01, Geo_Helmet_Pumpkin01, Geo_Helmet_PumpkinB01, 1, 2, "head", "handle", "wrap", head, handle, wrap, "stone", trunk, "head_used", "head_poor", wall, branches.
+Oat: billboard, density, chance, minangle, maxangle, minscale, maxscale.
+ObjectDamage: ticksPerSecond, active.
+Obsidian: texture, diffuse, normal, scale.
+OnHitEmitter: Name, Offset.
+OnLootEmitter: Name, Offset.
+Orange: Tag, dropChance, dropMinAmount, dropMaxAmount, offset.
+Orange Clay Brick Recipe: Script.
+Orange Daisies: Tag, offset, minScale, maxScale.
+Orange Daisy Petals: Tag, dropChance, dropMinAmount, dropMaxAmount.
+Orange Dye: Tag.
+Orange Dye Recipe: Script.
+Orange Fairy Ring: weight.
+Orange Fruit Trees: minScale, maxScale, object, weight.
+Orange Fungi Growth Controller: Tag.
+Orange Growth Controller: Tag.
+Orange Mushroom: Tag, object, minScale, maxScale, weight, minDepth, maxDepth.
+Orange Mushroom Chunk: dropChance, dropMinAmount, dropMaxAmount, Tag.
+Orange Mushroom Growth Controller: Tag.
+Orange Pumpkin: Tag, offset, minScale, maxScale.
+Orange Seed Tree: Tag.
+Orange Seeds: Tag.
+Orange Seeds Recipe: Script.
+Orange Tree: Tag, offset, minScale, maxScale.
+Orange Tree Cluster: weight.
+Orange Tree Growth Controller: Tag.
+Orange Trees: minScale, maxScale, object, weight.
+Paddlesnip: Tag, offset.
+Painted Rock B: texture.
+Painted Rock D: texture.
+PaintedRockB: diffuse, normal, scale.
+PaintedRockD: diffuse, normal, scale.
+Paisley Fern Leaf: Tag.
+Pakroot: Tag, offset.
+Palm Tree A: Tag, offset, minScale, maxScale.
+Palm Tree A Sapling: Tag, offset, minScale, maxScale.
+Palm Tree B: Tag, offset, minScale, maxScale.
+Palm Tree B Sapling: Tag, offset, minScale, maxScale.
+Palm Tree Forest One: weight.
+Palm Tree Forest Two: weight.
+Palm Tree Forest with Bananas: weight.
+Palm Tree Forest with Coconuts: weight.
+Panel: "Animal Hide".
+Panels: "Leaf", "Chopped Wood", "Long Shaft", "Wood Branch".
+Part1: "Long Shaft", "Wood Log", "Wood Branch", "Hardened Wood", "Flat Rock".
+Part2: "Vines", "Chopped Wood", "Leather Bellows", "Hardened Wood", "Latten".
+Part3: "Round Rock", "Vines", "Cobblestone Clump", "Black Rock", "Leather Strips".
+Part4: "Coal".
+Patch 1: "Leather Patch".
+Patch 2: "Linen Textile Plain".
+Patchy Bush: weight.
+Peacock Fern Leaf: Tag.
+Peacock Hostas: weight.
+Percy: Tag.
+Peridot Cluster: Tag, object, minScale, maxScale, weight, minDepth, maxDepth.
+Peridot Shard: Tag, dropChance, dropMinAmount, dropMaxAmount.
+Peridot Spire: Tag, object, minScale, maxScale, weight, minDepth, maxDepth.
+Pickup: path.
+Pierce: player, character, gameObject, terrain.
+Pine Tree: Tag, offset, minScale, maxScale.
+Pine Tree Sapling: Tag, object, minScale, maxScale, weight.
+Pine Trees: weight, minScale, maxScale, object, offset.
+Piney Woods: depositSet, mainMaterialStrength, dayAmbiance, nightAmbiance, geome, skyState.
+PineyWoodsBiome: Dirt, Sand, Gravel, Cliff Rock Light, Cliff Rock Dark, Rock, Obsidian.
+Pink Clay Brick Recipe: Script.
+Pink Daisies: Tag, offset, minScale, maxScale.
+Pink Daisy Petals: Tag, dropChance, dropMinAmount, dropMaxAmount.
+Pink Drivy Cluster: weight.
+Pink Dye: Tag.
+Pink Dye Recipe: Script.
+Pink Fairy Ring: weight.
+Pink Fungi Growth Controller: Tag.
+Pink Mushroom: Tag, object, minScale, maxScale, weight, minDepth, maxDepth, offset.
+Pink Mushroom Chunk: dropChance, dropMinAmount, dropMaxAmount, Tag.
+Pink Mushroom Growth Controller: Tag.
+Place: path.
+Placeable: name, icon, minScale, maxScale, category, tier, resource, placeWithNoPhysics, survivalFaceCamera, survivalRotOffset, placementSound, health, durabilityLossOnCorrect, durabilityLossOnIncorrect, removalSound, miningEmitter, miningEmitterAlt, maxStackCount, durability, tetherDistanceModifier, craftingArchetype, consumable, stepSound, useAlphaShadows, weaponRange, impactFailSound, handleType, dontCastShadows, damageToCharacters, damageToObjects, cateogry, materialRep.
+Placeable SaberCat: Tag.
+PlaceableMaterial: material, gridSizeX, gridSizeY, category, tier, objectRep, durabilityLossOnCorrect, durabilityLossOnIncorrect, placementSound, removalSound, stepSound, miningEmitter, miningEmitterAlt.
+Plains: depositSet, dayAmbiance, nightAmbiance, mainMaterialStrength, geome, skyState.
+PlainsBiome: Clay, Dirt, Sand, Gravel, Cliff Rock Light, Cliff Rock Dark, Rock, Obsidian.
+PlainsGenerator: Clay, Dirt, Sand, Gravel, Cliff Rock Light, Cliff Rock Dark, Rock, Obsidian.
+Plate: "Bronze Glove Plate".
+Poison Potion: Tag.
+Poison Potion Attractor: offset, emitter.
+Poison Potion Recipe: Script.
+Polar: depositSet, dayAmbiance, nightAmbiance, mainMaterialStrength, geome, skyState.
+Polar Blueberry Bush: Tag, offset, minScale, maxScale, minDepth, maxDepth.
+Polar Bush Sprout: Tag, offset, minDepth, maxDepth.
+Polar Bush Young: Tag, offset, minDepth, maxDepth.
+Polar Fernicus: Tag, offset, minScale, maxScale, minDepth, maxDepth.
+Polar Geome: amplitude, wavelength, roughness, snowHeight, noiseFunction, htDistribution.
+Polar Redberry Bush: Tag, offset, minScale, maxScale, minDepth, maxDepth.
+Polar Surface Channels: caveFunction, wallMaterial, floorMaterial, depthBelowSurface, spacing, horizontalAmplitude, horizontalFrequency, verticalAmplitude, verticalFrequency, minRadius, maxRadius.
+PolarLakes: Snow, Dirt, Sand, Gravel, Cliff Rock Light, Cliff Rock Dark, Rock, Obsidian.
+PolarSnowmounds: Snow, Dirt, Sand, Gravel, Cliff Rock Light, Cliff Rock Dark, Rock, Obsidian.
+Poles: "Long Shaft".
+Ponsai Tree: Tag, offset, minScale, maxScale.
+Ponsai Trees: weight.
+Poor: damageEmitter, durabilityThreshold, model.
+Potion: "Poison Potion".
+Pour: destinationState, animation.
+Pour_In: path.
+Pour_Loop: path.
+Pour_Out: path.
+Pouring: Node.
+Powder: "Bone Powder", "Wood Chips", "Tooth Powder", "Seeds", "Orange Mushroom Chunk", "Ghost Mushroom Chunk".
+Prickly Pear Cactus A: Tag, offset, minScale, maxScale.
+Prickly Pear Cactus B: Tag, offset, minScale, maxScale.
+Prickly Pear Cactus C: Tag, offset, minScale, maxScale.
+Prickly Pear Cactus Patch: weight.
+Projectile: name, handlerFile, handlerClass, speed, acceleration, contactProbeLength, debugging, lookAhead, strikeThreshold, force, damage, triggerIgnoreSource.
+Pumpkin Cauldron: craftTime, spawnOffsetOverride, Tag.
+Pumpkin Cauldron Recipe: Script.
+Pumpkin Growth Controller: Tag.
+Pumpkin Helmet: Tag.
+Pumpkin Helmet Breakdown: Script.
+Pumpkin Helmet Recipe: Script.
+Pumpkin Seed Vine: Tag.
+Pumpkin Seeds: Tag.
+Pumpkin Shell: Tag.
+Pumpkin Shell & Seeds Recipe: Script.
+Pumpkin Skull Cap: Tag.
+Pumpkin Skull Cap Recipe: Script.
+Pumpkin Trap Recipe: Script.
+Pumpkin Vine Growth Controller: Tag.
+Pumpkin Vines: weight.
+Punch: path.
+Purple Clay Brick Recipe: Script.
+Purple Daisies: Tag, offset, minScale, maxScale.
+Purple Daisy Petals: Tag, dropChance, dropMinAmount, dropMaxAmount.
+Purple Dye: Tag.
+Purple Dye Recipe: Script.
+Purple Fairy Ring: weight.
+Purple Fungi Growth Controller: Tag.
+Purple Gourd: Tag, offset.
+Purple Gourd Growth Controller: Tag.
+Purple Gourd Seed Vine: Tag.
+Purple Gourd Seeds: Tag.
+Purple Gourd Vine Growth Controller: Tag.
+Purple Mushroom: Tag, object, minScale, maxScale, weight, minDepth, maxDepth, offset.
+Purple Mushroom Chunk: dropChance, dropMinAmount, dropMaxAmount, Tag.
+Purple Mushroom Growth Controller: Tag.
+RadiusDamage: radius, characterDamage, gameObjectDamage, incorrectTierCap, playerDamage.
+Ravines: amplitude, wavelength, roughness, snowHeight, noiseFunction, htDistribution, depositionThreshold, depositionScale.
+Raw Meat: dropChance, dropMinAmount, dropMaxAmount, Tag.
+Red Apple: Tag, dropChance, dropMinAmount, dropMaxAmount, offset.
+Red Apple Seeds: Tag.
+Red Apple Seeds Recipe: Script.
+Red Apple Tree Growth Controller: Tag.
+Red Clay Brick Recipe: Script.
+Red Cliff Arches: caveFunction, wallMaterial, floorMaterial, depthBelowSurface, spacing, horizontalAmplitude, horizontalFrequency, verticalAmplitude, verticalFrequency, minRadius, maxRadius.
+Red Cliffs: depositSet, dayAmbiance, nightAmbiance, mainMaterialStrength, geome, skyState, amplitude, wavelength, roughness, snowHeight, stepMultiplier, noiseFunction.
+Red Daisies: Tag, offset, minScale, maxScale.
+Red Daisy Petals: Tag, dropChance, dropMinAmount, dropMaxAmount.
+Red Dye: Tag.
+Red Dye Recipe: Script.
+Red Fairy Ring: weight.
+Red Fungi Growth Controller: Tag.
+Red Mushroom: Tag, object, minScale, maxScale, weight, minDepth, maxDepth, offset.
+Red Mushroom Chunk: dropChance, dropMinAmount, dropMaxAmount, Tag.
+Red Mushroom Growth Controller: Tag.
+Red Mushrooms: object, weight, minScale, maxScale.
+RedCliffsBiome: Clay, Dirt, Sand, Gravel, Cliff Rock Light, Cliff Rock Dark, Rock, Obsidian.
+Redberries: Tag, dropChance, dropMinAmount, dropMaxAmount.
+Redberry Bush: Tag, offset, minScale, maxScale.
+Redroot: Tag, offset.
+Redroot Leaves: Tag, dropMaxAmount, dropMinAmount, dropChance.
+Reeds: Tag.
+ReleaseAtState: Release.
+Remove: time, abortOnRemove.
+Repair Aid: "Loose Pebbles", "Vines", "Animal Hide", "Linen Textile Plain".
+Repair Bronze Items: Script.
+Repair Crude Hide Items: Script.
+Repair Crude Stone Items: Script.
+Repair Crude Vine Items: Script.
+Repair Linen Items: Script.
+Results: "Forked Stick", "Loose Pebbles", "Wood Shaft", "Wood Branch", "Gourd Shell", "Bamboo Shaft", "Vines", "Coconut Shell", "Hardened Wood Shaft", "Goat Skull", "Tooth", "Animal Horn", "Hosta Leaf", "Animal Hide", "Hardened Wood Handle", "Leather Strips", "Bronze Chunks", "Linen Textile Plain", "Leather Patch", "Wood Plank", "Chopped Wood", "Stacked Wood", "Round Rock", "Jagged Rock", "Small Rock Spire", "Knapped Rock Spire", "Cobblestone", "Cobblestone Gray Clump", "Cobblestone Blue Clump", "Cobblestone Green Clump", "Latten", "Hardened Wood", "Bronze Hammer", "Bronze Pick", "Bronze Axe", "Bronze Hoe", "Bronze Knife", "Bronze Shovel", "Bronze Sword", "Bronze Spear", "Bronze Cudgel", "Bronze Skull Cap", "Wool Shirt", "Linen Tunic", "Copper Necklace", "Bronze Buckle", "Linen Arm Wraps", "Bronze Plated Glove", "Wool Breeches", "Fuel Potion", "Leaf Backpack", "Crude Chest", "Woven Basket", "Vine Fence", "Crude Bed", "Leather Bellows", "Wood Shuttle", "Lotus Chair", "Bamboo Stool", "Bamboo Table", "Mushroom Bed", "Crude Door", "Pumpkin Helmet", "Pumpkin Skull Cap", "Leaf Vest", "Hide Vest", "Goat Skins", "Bamboo Vest", "Bone Necklace", "Vine Arm Wraps", "Wood Bracers", "Bamboo Bracers", "Wood Kneepads", "Bamboo Anklets", "Small Wood Shield", "Leather Pads", "Return Stone", "Cabbage Trap Seeds", "Fireball Neuria Gauntlet", "Ice Blast Neuria Gauntlet", "Growth Potion", "Durability Potion", "Health Potion", "Speed Potion", "Poison Potion", "Melon Seeds", "Red Apple Seeds", "Pumpkin Seeds", "Pumpkin Shell", "Purple Gourd Seeds", "Orange Seeds", "Cherry Seeds", "Coconut Half", "Cooked Meat", "Small Torch", "Large Torch", "Wood Chips", "Bone Powder", "Tooth Powder", "Bronze Hammer Head", "Bronze Pick Head", "Bronze Axe Head", "Bronze Hoe Head", "Bronze Shovel Head", "Bronze Knife Blade", "Bronze Spear Head", "Bronze Sword Blade", "Bronze Cudgel Head", "Bronze Glove Plate", "Bronze Neck Strand", "Bronze Chestplate", "Bronze Headshell", "Black Dye", "Blue Dye", "Cyan Dye", "Gray Dye", "Green Dye", "Light Blue Dye", "Light Purple Dye", "Light Gray Dye", "Magenta Dye", "Pink Dye", "Orange Dye", "Lime Dye", "Red Dye", "Purple Dye", "White Dye", "Yellow Dye", "Brown Dye", "Thatch Dark Green Clump", "Thatch Light Green Clump", "Thatch Tan Clump", "Thatch Sat Green Clump", "Thatch Hosta Leaf Edged Clump", "Thatch Light Hosta Leaf Clump", "Thatch Hosta Leaf Spotted Clump", "Clay Brick", "Clay Black Clump", "Clay Blue Clump", "Clay Cyan Clump", "Clay Gray Clump", "Clay Green Clump", "Clay Light Blue Clump", "Clay Light Purple Clump", "Clay Light Gray Clump", "Clay Magenta Clump", "Clay Pink Clump", "Clay Orange Clump", "Clay Lime Clump", "Clay Red Clump", "Clay Purple Clump", "Clay White Clump", "Clay Yellow Clump", "Clay Brown Clump", "Crude Axe", "Crude Pick", "Crude Hammer", "Crude Shovel", "Crude Hoe", "Crude Knife", "Gourd Torch", "Gourd Flask", "Vine Collar", "Percy", "Bronze Chisel", "Bronze Spade", "Bronze Trowel", "Leather Bridle", "Leather Saddle", "Skull Stick", "Pumpkin Trap", "Spiked Pit Trap", "Leaf Canopy", "Cage Trap Wall", "Cage Trap Floor", "Vine Fence Cage", "Wood Spear", "Bamboo Spear", "Spiked Staff", "Cactus Club", "Spiked Club", "Crude Sword", "Crude Slingshot", "Bronze Short Javelin", "Bronze Long Javelin", "Bronze Hammer Pike", "Bronze Axe Pike", "Bronze Blunt Pike", "Bronze Scythe", "Crude Workbench", "Fire Pit", "Pumpkin Cauldron", "Stone Furnace", "Sandcast Mold", "Stone Anvil", "Alchemy Table", "Artisan Workbench", "Loom".
+Return Emitter: offset.
+Return Stone: Tag.
+Return Stone FX: Tag.
+Return Stone Recipe: Script.
+Rigidbody: keyframed, mass.
+Ripe Gourd: offset.
+River Beds: caveFunction, wallMaterial, floorMaterial, depthBelowSurface, spacing, horizontalAmplitude, horizontalFrequency, verticalAmplitude, verticalFrequency, minRadius, maxRadius.
+Roam Fly Emitter: offset.
+Roam Fly Spiked Pit Trap Emitter: offset.
+Roaming Fly: offset.
+Rock: "Loose Pebbles", "Crude Rock Head", "Leaf Backpack", texture, diffuse, normal, scale.
+Rock Cluster1: weight, minDepth, maxDepth.
+Rock Cluster2: weight, minDepth, maxDepth.
+Rock Cluster3: weight, minDepth, maxDepth.
+Rock01 Blue: Tag, object, minScale, maxScale, weight, minDepth, maxDepth.
+Rock01 Green: Tag.
+Rock01 Grey: Tag.
+Rock01 White: Tag.
+Rock01 Yellow: Tag.
+Rock02 Blue: Tag, offset, object, minScale, maxScale, weight, minDepth, maxDepth.
+Rock02 Green: Tag, offset.
+Rock02 Grey: Tag, offset.
+Rock02 White: Tag, offset, minScale, maxScale.
+Rock02 Yellow: Tag, offset.
+Rock03 Blue: Tag, object, minScale, maxScale, weight, minDepth, maxDepth, offset.
+Rock03 Green: Tag, offset, minScale, maxScale.
+Rock03 Grey: Tag, offset, minScale, maxScale.
+Rock03 White: Tag, offset, minScale, maxScale.
+Rock03 Yellow: Tag, offset, minScale, maxScale.
+Rock04 Blue: Tag, offset, minScale, maxScale, object, weight, minDepth, maxDepth.
+Rock04 Green: Tag, offset, minScale, maxScale.
+Rock04 Grey: Tag, offset, minScale, maxScale.
+Rock04 White: Tag, offset, minScale, maxScale.
+Rock04 Yellow: Tag, offset, minScale, maxScale.
+Rock05 Blue: Tag.
+Rock05 Green: Tag, offset, minScale, maxScale.
+Rock05 Grey: Tag.
+Rock05 White: Tag, offset, minScale, maxScale.
+Rock05 Yellow: Tag.
+Rock06 Blue: Tag, offset.
+Rock06 Green: Tag, offset.
+Rock06 Grey: Tag, offset.
+Rock06 White: Tag, offset.
+Rock06 Yellow: Tag.
+Rock07 Blue: Tag, object, minScale, maxScale, weight, minDepth, maxDepth, offset.
+Rock07 Green: Tag, offset, minScale, maxScale.
+Rock07 Grey: Tag.
+Rock07 White: Tag, offset, minScale, maxScale.
+Rock07 Yellow: Tag, offset, minScale, maxScale.
+Rock08 Blue: Tag, offset, minScale, maxScale, object, weight, minDepth, maxDepth.
+Rock08 Green: Tag, offset, minScale, maxScale.
+Rock08 Grey: Tag, offset, minScale, maxScale.
+Rock08 White: Tag, offset, minScale, maxScale.
+Rock08 Yellow: Tag, offset, minScale, maxScale.
+Rock09 Blue: Tag, object, minScale, maxScale, weight, minDepth, maxDepth.
+Rock09 Green: Tag.
+Rock09 Grey: Tag.
+Rock09 White: Tag.
+Rock09 Yellow: Tag, offset, minScale, maxScale.
+Rock10 Blue: Tag, offset, minScale, maxScale, object, weight, minDepth, maxDepth.
+Rock10 Green: Tag, offset, minScale, maxScale.
+Rock10 Grey: Tag, offset, minScale, maxScale.
+Rock10 White: Tag, offset, minScale, maxScale.
+Rock10 Yellow: Tag, offset, minScale, maxScale.
+Rocky Foothills: amplitude, wavelength, roughness, snowHeight, noiseFunction, htDistribution.
+Rod: "Hardened Wood Handle".
+Rolling Hills: depositSet, dayAmbiance, nightAmbiance, mainMaterialStrength, geome, skyState, amplitude, wavelength, roughness, snowHeight, noiseFunction, htDistribution.
+Rolling Plains: amplitude, wavelength, roughness, snowHeight, noiseFunction, htDistribution.
+RollingHillsBiome: Mud, Dirt, Sand, Gravel, Cliff Rock Light, Cliff Rock Dark, Rock, Obsidian.
+Root Iceroot: Tag, dropMaxAmount, dropMinAmount, dropChance.
+Root Paddlesnip: Tag, dropMaxAmount, dropMinAmount, dropChance.
+Root Pakroot: Tag, dropMaxAmount, dropMinAmount, dropChance.
+Root Redroot: Tag, dropMaxAmount, dropMinAmount, dropChance.
+Roots: weight.
+Round Rock: Tag, dropChance, dropMinAmount, dropMaxAmount, offset, object, weight, minScale, maxScale, minDepth, maxDepth.
+Round Rock Blue: offset.
+Round Rock Gray: offset.
+Round Rock Green: offset.
+Ruby Cluster: Tag, object, minScale, maxScale, weight, minDepth, maxDepth.
+Ruby Shard: Tag, dropChance, dropMinAmount, dropMaxAmount.
+Ruby Spire: Tag, object, minScale, maxScale, weight, minDepth, maxDepth.
+Ruins Arch01: Tag.
+Ruins Blocks: texture, diffuse, normal, scale.
+Ruins Pointed Obelisk: Tag.
+Ruins Rectangle Obelisk: Tag.
+Ruins Rock Large: Tag.
+Ruins Wall: texture, diffuse, normal, scale.
+Ruins Wall Chunk: Tag.
+Ruins Wall01: Tag.
+Run: path.
+Run_Back: path.
+Run_Backward_Two_Handed_Mask: path.
+Run_Forward_Two_Handed_Mask: path.
+Run_Shield_Forward: path.
+Run_Shield_Right: path.
+Run_Strafe_Back_Left: path.
+Run_Strafe_Back_Right: path.
+Run_Strafe_Forward_Left: path.
+Run_Strafe_Forward_Right: path.
+Run_Strafe_Left: path.
+Run_Strafe_Right: path.
+Run_Two_Handed: path.
+Run_Two_Handed_Left: path.
+Run_Two_Handed_Left_Mask: path.
+Run_Wpn: path.
+SaberCub Spawn Node: Tag.
+Saddle Tack Breakdown: Script.
+Saguaro Cactus A: Tag, offset, minScale, maxScale.
+Saguaro Cactus B: Tag, offset, minScale, maxScale.
+Saguaro Cactus C: Tag, offset, minScale, maxScale.
+Saguaro Cactus Cluster1: weight.
+Saguaro Cactus Cluster2: weight.
+Sand: horizontalScaleX, horizontalScaleZ, verticalScale, frequency, perlinShift, minDepth, maxDepth, texture.
+Sand Grass: inherit, billboard, billboard1, billboard2.
+Sand Grass Swap: inherit, billboard, billboard1, billboard2.
+SandA: diffuse, normal, scale.
+Sandcast Mold: spawnOffsetOverride, craftTime, Tag.
+Sandcast Mold Recipe: Script.
+Sandstone: horizontalScaleX, horizontalScaleZ, verticalScale, frequency, perlinShift, minDepth, maxDepth.
+Sapphire Cluster: Tag, object, minScale, maxScale, weight, minDepth, maxDepth.
+Sapphire Shard: Tag, dropChance, dropMinAmount, dropMaxAmount.
+Sapphire Spire: Tag, object, minScale, maxScale, weight, minDepth, maxDepth.
+SatGreenThatch: diffuse, normal, scale.
+Saturated Green Grass Thatch Recipe: Script.
+Savannah Grass: inherit, top, side, billboard.
+Savannah Grass Swap: inherit, top, side, billboard.
+Scallop Shell: Tag.
+Scoreboard: Tag.
+Script: file, class.
+Scripted Cage Trap Wall: Tag.
+Scrub Brush: Tag, object, minScale, maxScale, weight, offset.
+Scrub Brush Clusters: weight.
+Seat: "Lotus Teeth Core", "Leaf", "Long Shaft".
+Second Ore: "Tin Ore".
+Seed: "Cabbage Pod".
+Shaft: "Cane Stave", "Forked Stick", "Long Shaft", "Wood Shaft", "Bamboo Shaft", "Wood Branch".
+Shaft One: "Hardened Wood".
+Shaft Two: "Hardened Wood Handle".
+Shell: "Pumpkin Shell", "Long Shaft", "Wood Bracers", "Bamboo Bracers", "Coconut Shell", "Gourd Shell".
+ShieldBlock: destinationState, animation.
+ShieldBlocking: Node.
+ShieldEquipped: destinationState, duration.
+ShieldOn: Node.
+ShieldUnequipped: destinationState, duration.
+Shield_Block_In: path.
+Shield_Block_Loop: path.
+Shield_Block_Out: path.
+Shield_Crouch_Block_In: path.
+Shield_Crouch_Block_Loop: path.
+Shield_Crouch_Block_Out: path.
+Shoot: destinationState, animation.
+ShootLast: destinationState, animation.
+Short Swamp Grass: billboard, density, chance, minangle, maxangle, minscale, maxscale.
+Shovel: destinationState, animation, blendInTime.
+ShovelDig: path.
+Shovel_In: path.
+Shovel_Loop: path.
+Shovel_Out: path.
+Shoveling: Node.
+Shroom Hand: Tag, offset, minScale, maxScale, object, weight, minDepth, maxDepth.
+Shroom Hand Chunk: Tag, dropMaxAmount, dropMinAmount, dropChance.
+Shroom Hand Growth Controller: Tag.
+Sides: "Hardened Wood".
+Silver Fungi Growth Controller: Tag.
+Silver Mushroom: Tag, object, minScale, maxScale, weight, minDepth, maxDepth.
+Silver Mushroom Chunk: dropChance, dropMinAmount, dropMaxAmount, Tag.
+Silver Mushroom Growth Controller: Tag.
+Silver Ore: horizontalScaleX, horizontalScaleZ, verticalScale, frequency, perlinShift, minDepth, maxDepth, texture.
+SilverOre: diffuse, normal, scale.
+Single Orange Daisy: object, weight.
+Single Pink Daisy: object, weight.
+Single Purple Daisy: object, weight.
+Single Red Daisy: object, weight.
+Single White Daisy: object, weight.
+Single Yellow Daisy: object, weight.
+Sit_In: path.
+Sit_Out: path.
+Sitting: path.
+Skin: destinationState, animation.
+Skin_In: path.
+Skin_Loop: path.
+Skin_Out: path.
+Skinning: Node.
+Skull: "Goat Skull".
+Skull Stick: Tag.
+Skull Stick Breakdown: Script.
+Skull Stick Recipe: Script.
+Sky Dome: Tag.
+Slate Rock A: texture, diffuse, normal, scale.
+Slate Rock B: texture, diffuse, normal, scale.
+Slate Rock C: texture, diffuse, normal, scale.
+SlingshotHold: destinationState, animation.
+SlingshotHolding: Node.
+SlingshotHolding2: Node.
+Slingshot_Hold: path.
+Slingshot_Hold2: path.
+Slingshot_In: path.
+Slingshot_Out: path.
+Slingshot_Shoot: path.
+Small Blue Mushroom: dropChance, dropMinAmount, dropMaxAmount, Tag, offset, minScale, maxScale.
+Small Bronze Gear Breakdown: Script.
+Small Bronze Tool Breakdown: Script.
+Small Brown Mushroom: dropChance, dropMinAmount, dropMaxAmount, Tag.
+Small Cliffs: amplitude, wavelength, roughness, snowHeight, noiseFunction.
+Small Cliffs Carved: amplitude, wavelength, roughness, snowHeight, stepMultiplier, noiseFunction.
+Small Crude Gear Breakdown: Script.
+Small Crude Tool Breakdown: Script.
+Small Fruit Tree Log: Tag, dropMinAmount, dropMaxAmount, dropChance.
+Small Ghost Mushroom: dropChance, dropMinAmount, dropMaxAmount, Tag.
+Small Ice Mountains: amplitude, wavelength, roughness, snowHeight, noiseFunction.
+Small Orange Mushroom: dropChance, dropMinAmount, dropMaxAmount, Tag, offset, minScale, maxScale.
+Small Pink Mushroom: dropChance, dropMinAmount, dropMaxAmount, Tag, offset, minScale, maxScale.
+Small Ponds: caveFunction, wallMaterial, floorMaterial, depthBelowSurface, spacing, horizontalAmplitude, horizontalFrequency, verticalAmplitude, verticalFrequency, minRadius, maxRadius.
+Small Purple Mushroom: dropChance, dropMinAmount, dropMaxAmount, Tag, offset, minScale, maxScale.
+Small Red Mushroom: dropChance, dropMinAmount, dropMaxAmount, Tag, offset, minScale, maxScale.
+Small Rock Spire: Tag, dropChance, dropMinAmount, dropMaxAmount, object, weight, minScale, maxScale, minDepth, maxDepth.
+Small Silver Mushroom: dropChance, dropMinAmount, dropMaxAmount, Tag.
+Small Torch: Tag.
+Small Torch Recipe: Script.
+Small Torch at Fire Pit Recipe: Script.
+Small Wood Shield: Tag.
+Small Wood Shield Breakdown: Script.
+Small Wood Shield Recipe: Script.
+Smoke 1 Emitter: offset.
+Smoke Half Emitter: offset.
+Smoke Quarter Emitter: offset.
+Sneak_Back: path.
+Sneak_Back_Left: path.
+Sneak_Back_Right: path.
+Sneak_Fast_Weapon: path.
+Sneak_Forward: path.
+Sneak_Forward_Left: path.
+Sneak_Forward_Right: path.
+Sneak_Idle: path.
+Sneak_Idle_Shield: path.
+Sneak_Left: path.
+Sneak_Right: path.
+Sneak_Run_Back: path.
+Sneak_Run_Backward_Left: path.
+Sneak_Run_Backward_Right: path.
+Sneak_Run_Forward: path.
+Sneak_Run_Forward_Left: path.
+Sneak_Run_Forward_Right: path.
+Sneak_Run_Left: path.
+Sneak_Run_Right: path.
+Sneak_Shield_Back: path.
+Sneak_Shield_Forward: path.
+Sneak_Shield_Left: path.
+Sneak_Shield_Right: path.
+Sneak_Shield_Run_Back: path.
+Sneak_Shield_Run_Forward: path.
+Sneak_Shield_Run_Left: path.
+Sneak_Shield_Run_Right: path.
+Sneak_Slow_Weapon: path.
+Snow: texture, diffuse, normal, scale.
+Snow Mountain Rock: inherit, top.
+Snowcaps: depositSet, mainMaterialStrength, dayAmbiance, nightAmbiance, geome, skyState.
+Snowcaps Ravines: amplitude, wavelength, roughness, snowHeight, noiseFunction, htDistribution, depositionThreshold, depositionScale.
+Snowy Pine Tree: Tag, offset, minScale, maxScale.
+Snowy Pine Tree Sapling: Tag, offset, minScale, maxScale, object, weight.
+Soar: path.
+Soil: "Sand Clump".
+Source: "Animal Horn", "Goat Skull", "Tooth".
+Sparse Maple Trees: object, minScale, maxScale, weight.
+Sparse Pine Trees: minScale, maxScale, object, weight, offset.
+Spawn Point: Tag.
+Spears: "Spear".
+Speed Potion: Tag.
+Speed Potion Recipe: Script.
+SpeedBuff: class, players, characters, affectDead.
+Sphere: trigger, radius, material, name, center.
+Spike Trap: Tag.
+Spike Trap Recipe: Script.
+Spiked Club: Tag.
+Spiked Club Recipe: Script.
+Spiked Pit Trap: Tag.
+Spiked Staff: Tag.
+Spiked Staff Recipe: Script.
+Spotted Hosta Leaf Thatch Recipe: Script.
+Spotted Hostas: weight.
+Stacked Fruitwood: dropChance, dropMinAmount, dropMaxAmount.
+Stacked Hardwood: dropChance, dropMinAmount, dropMaxAmount.
+Stacked Wood: dropChance, dropMinAmount, dropMaxAmount.
+Stacked Wood Conversion: Script.
+Stalk: path.
+Stalking: name, animIndex, maxspeed, acceleration, turnrate.
+StartBlocking: destinationState, animation.
+StartBlockingCrouch: destinationState, animation.
+StartingAngles: Idle, Activate, Hold, Release, Rearm.
+States: Malnutrition, Starving, Hungry, Satisfied, Full, 0, 1, 2, 3, 4, 5, 6, 15, 12, 13, 11, Up, Loop, Ground, Land, LandRun.
+StaticGraphics: model, dontCastShadows, hideMesh, useAlphaShadows, mirror.
+Steam Half Emitter: offset.
+Steam Quarter Emitter: offset.
+Sticks: "Forked Stick".
+Stone: "Crude Knife".
+Stone Anvil: spawnOffsetOverride, craftTime, Tag.
+Stone Anvil Recipe: Script.
+Stone Furnace: craftTime, Tag.
+Stone Furnace Recipe: Script.
+Stone Lion: Tag.
+Stone Lion Broken: Tag.
+Stonehenge: weight.
+Stones: "Round Rock", "Crude Rock Head".
+StopBlocking: destinationState, animation.
+StopBlockingCrouch: destinationState, animation.
+Strafe_Back_Left: path.
+Strafe_Back_Right: path.
+Strafe_Forward_Left: path.
+Strafe_Forward_Right: path.
+Strafe_Left: path.
+Strafe_Right: path.
+Sulfur: horizontalScaleX, horizontalScaleZ, verticalScale, frequency, perlinShift, minDepth, maxDepth.
+Surface Caverns: caveFunction, wallMaterial, floorMaterial, minCavernDepth, maxCavernDepth, cavernFrequency, cavernSize.
+Surface Channels: caveFunction, wallMaterial, floorMaterial, depthBelowSurface, spacing, horizontalAmplitude, horizontalFrequency, verticalAmplitude, verticalFrequency, minRadius, maxRadius.
+Survival: SpawnBiome.
+Survival Center Large: Tag.
+Survival Center Medium: Tag.
+Survival Center Small: Tag.
+Swamp Dirt: inherit, top.
+Swamp Moss: inherit, top.
+Swamp Tall Grass: inherit, top, billboard.
+Swamp Tall Grass Swap: inherit, top, billboard.
+Swamplands: depositSet, mainMaterialStrength, dayAmbiance, nightAmbiance, geome, skyState.
+SwamplandsBiome: Clay, Dirt, Sand, Gravel, Cliff Rock Light, Cliff Rock Dark, Rock, Obsidian.
+Swampy Hills: amplitude, wavelength, roughness, snowHeight, noiseFunction.
+SwapToItem: path.
+SwapToNone: path.
+Swarm Firefly Aqua Emitter: offset.
+Swarm Firefly Orange Emitter: offset.
+Swarm Firefly Pink Emitter: offset.
+Swarm Firefly Yellow Emitter: offset.
+Swarm Fly Emitter: offset.
+Table: "Crude Workbench".
+Tall Brown Grass: billboard, density, chance, minangle, maxangle, minscale, maxscale.
+Tall Dark Green Grass: billboard, density, chance, minangle, maxangle, minscale, maxscale.
+Tall Grass: Tag.
+Tall Green Grass: billboard, density, chance, minangle, maxangle, minscale, maxscale.
+Tall Swamp Grass: billboard, density, chance, minangle, maxangle, minscale, maxscale.
+Tall White Rose: billboard, density, chance, minangle, maxangle, minscale, maxscale.
+Tan Grass: inherit, top, billboard, billboard1.
+Tan Grass Swap: inherit, top, billboard, billboard1.
+Tan Grass Thatch Recipe: Script.
+Tan Swamp Grass: inherit, top, billboard, billboard1.
+Tan Swamp Grass Swap: inherit, top, billboard, billboard1.
+Tan Thorny Vines: Tag.
+TanThatch: diffuse, normal, scale.
+TargetDamage: breakdown, damage, gameObjectDamage, incorrectTierCap.
+TargetSound: name, minDist, maxDist, player, character.
+TargetTimer: time, restarting, callback.
+Teen: submesh.
+Terrace Grass: inherit, top, billboard, billboard1.
+Terrace Grass Swap: inherit, top, billboard, billboard1.
+TerrainDamage: radius.
+TerrainSettings: biomeSize, biomeOverlap, survivalRadius.
+TerrainSwap: radius, material.
+Test3: Test, Test2, Test3.
+Test4: TestA, TestB, TestC.
+TestGenerator: Clay, Dirt, Sand, Gravel, Cliff Rock Light, Cliff Rock Dark, Rock, Obsidian.
+Thatch Dark Green: texture.
+Thatch Hosta Leaf Edged: texture.
+Thatch Hosta Leaf Spotted: texture.
+Thatch Light Green: texture.
+Thatch Light Hosta: texture.
+Thatch Sat Green: texture.
+Thatch Tan: texture.
+Thatches: "Thatch".
+The Valley: depositSet, dayAmbiance, nightAmbiance, mainMaterialStrength, geome, skyState.
+Thin Obelisk: Tag.
+Thornwood: Tag, object, weight, offset, minScale, maxScale.
+Thornwood Clusters: weight.
+Thread: "Animal Hide".
+Throw: path, destinationState, animation, logic.
+Throw_Cancel: path.
+Throw_Hold: path.
+Throw_In: path.
+Throw_Potion: path.
+Throw_Potion_Cancel: path.
+Throw_Potion_Hold: path.
+Throw_Potion_In: path.
+TimedStates: Hold, Rearm.
+Tin Ore: dropChance, dropMinAmount, dropMaxAmount, horizontalScaleX, horizontalScaleZ, verticalScale, frequency, perlinShift, minDepth, maxDepth, texture.
+TinOre: diffuse, normal, scale.
+Tool: "Crude Hammer", "Crude Pick", "Crude Axe", "Crude Sword", "Crude Hoe", "Crude Shovel", "Wood Spear", "Club", "Small Modular Tool", "Small Modular Weapon", "Bronze Spear", "Bronze Short Javelin", "Bronze Long Javelin", "Large Modular Tool", "Large Modular Weapon", "Bronze Skull Cap", "Copper Necklace", "Bronze Plated Glove", "Wool Shirt", "Wool Breeches", "Linen Tunic", "Linen Arm Wraps", "Leather Pads", "Leather Bridle", "Leather Saddle", "Crude Knife", "Wood Shuttle".
+Tooth: dropChance, dropMinAmount, dropMaxAmount, Tag.
+Tooth Powder: Tag.
+Tooth Powder Recipe: Script.
+Topaz Cluster: Tag, object, weight, minScale, maxScale, minDepth, maxDepth.
+Topaz Shard: Tag, dropChance, dropMinAmount, dropMaxAmount.
+Topaz Spire: Tag, object, weight, minScale, maxScale, minDepth, maxDepth.
+Torch: "Gourd Torch", "Gourd Flask", "Large Torch", "Small Torch", duration, canStart, isConsumed.
+Torch Attractor: offset, emitter.
+Torched Meat Recipe: Script.
+Trajectory: handlerClass.
+Tree Growth Controller: Tag.
+Tree Sprout: Tag, offset.
+Treepod Grove: weight.
+Trepod Bulb: object, weight, minScale, maxScale.
+Trepod Tree: Tag, object, weight, minScale, maxScale.
+Trepod Trees: object, weight, minScale, maxScale, minDepth, maxDepth.
+Trot: path.
+Tumbleweed Cluster: weight.
+Tumbleweed Clusters: weight.
+Unable: path.
+Underground Fog: object, weight, minDepth, maxDepth.
+Unripe Apple: Tag.
+Unripe Banana: Tag.
+Unripe Blueberries: Tag.
+Unripe Cherries: Tag.
+Unripe Melon: Tag.
+Unripe Orange: Tag.
+Unripe Orange Pumpkin: Tag.
+Unripe Purple Gourd: Tag.
+Unripe Redberries: Tag.
+Up DoubleCap Fluff Glow Emitter: offset.
+Up Pollen Pink Emitter: offset.
+Upgrade: "Animal Hide", "Long Shaft".
+Used: damageEmitter, durabilityThreshold, model.
+Vegetation: duration, canStart, isConsumed.
+Vest: "Leaf Vest", "Hide Vest".
+Vine Arm Wraps: Tag.
+Vine Arm Wraps Recipe: Script.
+Vine Club: Tag.
+Vine Collar Recipe: Script.
+Vine Fence: Tag.
+Vine Fence Cage: Tag.
+Vine Fence Recipe: Script.
+Vine Tool Breakdown: Script.
+Vines: "Vines", Tag, dropChance, dropMinAmount, dropMaxAmount.
+Vines Conversion: Script.
+Vswing: destinationState, animation, blendInTime.
+Vswing_In: path.
+Vswing_Loop: path.
+Vswing_Out: path.
+Vswinging: Node.
+Walk: path.
+Walk_Back: path.
+Walk_Forward_Two_Handed_Mask: path.
+Walk_Two_Handed: path.
+Walk_Two_Handed_Left: path.
+Walk_Two_Handed_Left_Mask: path.
+Walking: name, animIndex, maxspeed, acceleration, turnrate.
+Wall: "Vine Fence".
+Watouwr Tree: Tag, object, minScale, maxScale, weight, minDepth, maxDepth.
+Weapon: "Bamboo Spear", "Crude Slingshot", "Spiked Staff", "Vine Collar", "Crude Sword", "Wood Spear", "Club".
+Weights: "Round Rock".
+Wheat: billboard, density, chance, minangle, maxangle, minscale, maxscale.
+White Boulder: Tag, offset.
+White Boulders: object, weight, minDepth, maxDepth.
+White Clay Brick Recipe: Script.
+White Daisies: Tag, offset, minScale, maxScale.
+White Daisy Petals: Tag, dropChance, dropMinAmount, dropMaxAmount.
+White Desert Cliffs: amplitude, wavelength, roughness, snowHeight, stepMultiplier, noiseFunction.
+White Dye: Tag.
+White Dye Recipe: Script.
+White Mesa Caverns: caveFunction, wallMaterial, floorMaterial, minCavernDepth, maxCavernDepth, cavernFrequency, cavernSize.
+White Mesa Rock: texture.
+White Mesa Surface Channels: caveFunction, wallMaterial, floorMaterial, depthBelowSurface, spacing, horizontalAmplitude, horizontalFrequency, verticalAmplitude, verticalFrequency, minRadius, maxRadius.
+White Sand Mesa: inherit, side.
+Winter Maple Clusters: weight.
+Winter Maple Tree: Tag, offset, minScale, maxScale, object, weight.
+Winter Maple Tree Sapling: Tag, offset, minScale, maxScale.
+Winter Maple Trees: weight, minScale, maxScale, object.
+Winter Scrub Brush: Tag, offset, minScale, maxScale.
+Winter Scrubs: weight.
+Wisp Attractor: emitter.
+Wood: "Forked Stick", "Chopped Wood", "Crude Hammer", "Hardened Wood", "Wood Branch", duration, canStart, isConsumed.
+Wood 1: "Hardened Wood".
+Wood 2: "Hardened Wood Shaft".
+Wood Bracers: Tag.
+Wood Bracers Recipe: Script.
+Wood Branch: dropChance, dropMinAmount, dropMaxAmount, Tag.
+Wood Branch Conversion: Script.
+Wood Chips: Tag.
+Wood Chips Recipe: Script.
+Wood Kneepads: Tag.
+Wood Kneepads Recipe: Script.
+Wood Log Acacia Chunk 1: Tag, dropMinAmount, dropMaxAmount, dropChance.
+Wood Log Acacia Chunk 2: Tag.
+Wood Log Acacia Chunk 3: Tag.
+Wood Log Acacia Chunk 4: Tag.
+Wood Log Acacia Dead Chunk 1: Tag, dropMinAmount, dropMaxAmount, dropChance.
+Wood Log Acacia Dead Chunk 2: Tag.
+Wood Log Acacia Dead Chunk 3: Tag.
+Wood Log Acacia Dead Chunk 4: Tag.
+Wood Log Aspen Chunk 1: Tag, dropMinAmount, dropMaxAmount, dropChance.
+Wood Log Aspen Chunk 2: Tag.
+Wood Log Maple: Tag, dropChance, dropMinAmount, dropMaxAmount.
+Wood Log Palm Short: Tag, dropChance, dropMinAmount, dropMaxAmount.
+Wood Log Palm Tall: Tag, dropChance, dropMinAmount, dropMaxAmount.
+Wood Log Pine: Tag, dropChance, dropMinAmount, dropMaxAmount.
+Wood Log Ponsai Chunk 1: Tag.
+Wood Log Ponsai Chunk 2: Tag.
+Wood Log Ponsai Chunk 3: Tag, dropChance, dropMinAmount, dropMaxAmount.
+Wood Plank: dropChance, dropMinAmount, dropMaxAmount.
+Wood Plank Conversion: Script.
+Wood Shaft: dropChance, dropMinAmount, dropMaxAmount, Tag.
+Wood Shaft Conversion: Script.
+Wood Shuttle: Tag.
+Wood Shuttle Recipe: Script.
+Wood Spear: Tag.
+Wood Spear Recipe: Script.
+Wool Breeches: Tag.
+Wool Breeches Conversion: Script.
+Wool Breeches Recipe: Script.
+Wool Shirt: Tag.
+Wool Shirt Conversion: Script.
+Wool Shirt Recipe: Script.
+World Caverns: caveFunction, wallMaterial, floorMaterial, minCavernDepth, maxCavernDepth, cavernFrequency, cavernSize.
+World Center: Tag.
+World Tunnels: caveFunction, wallMaterial, floorMaterial, depthBelowSurface, spacing, horizontalAmplitude, horizontalFrequency, verticalAmplitude, verticalFrequency, minRadius, maxRadius.
+World Tunnels Deeper: caveFunction, wallMaterial, floorMaterial, depthBelowSurface, spacing, horizontalAmplitude, horizontalFrequency, verticalAmplitude, verticalFrequency, minRadius, maxRadius.
+Worm Tunnels: caveFunction, wallMaterial, floorMaterial, depthBelowSurface, horizontalAmplitude, horizontalFrequency, verticalAmplitude, verticalFrequency, minRadius, maxRadius.
+Woven Basket: Tag.
+Woven Basket Recipe: Script.
+Wrap: archetype, default, proxy, attachpoint.
+Yellow Boulder: Tag, offset.
+Yellow Boulders: object, weight.
+Yellow Canine Tooth: Tag.
+Yellow Clay Brick Recipe: Script.
+Yellow Daisies: Tag, offset, minScale, maxScale.
+Yellow Daisy Petals: Tag, dropChance, dropMinAmount, dropMaxAmount.
+Yellow Drivy Cluster: weight.
+Yellow Dye: Tag.
+Yellow Dye Recipe: Script.
+Yellow Grass 0: billboard, density, chance, minangle, maxangle, minscale, maxscale.
+Yellow Spikey Grass 1: billboard, density, chance, minangle, maxangle, minscale, maxscale.
+Yellow Spikey Grass 2: billboard, density, chance, minangle, maxangle, minscale, maxscale.
+Young Bamboo Medium Log: Tag, dropChance, dropMinAmount, dropMaxAmount.
+Young Bamboo Stalk: Tag, offset, minScale, maxScale.
+Young Bamboo Stalk3: Tag, offset, minScale, maxScale.
+Young Bamboo Stalk4: Tag, offset, minScale, maxScale.
+Young Bamboo Stalk5: Tag.
+Young Bamboo Tall Log: Tag, dropChance, dropMinAmount, dropMaxAmount.
+Young Bamboo TreeA: Tag, offset, minScale, maxScale.
+Young Bamboo TreeA2: Tag.
+Young Bamboo TreeA3: Tag, offset, minScale, maxScale.
+Young Bamboo TreeA4: offset, minScale, maxScale.
+Young Bamboo TreeA5: offset, minScale, maxScale.
+Young Bamboo TreeA6: offset, minScale, maxScale.
+Young Bamboo TreeB: Tag, offset, minScale, maxScale.
+Young Bamboo TreeB2: Tag.
+Young Bamboo TreeB3: Tag, offset, minScale, maxScale.
+Young Bamboo TreeB4: offset, minScale, maxScale.
+Young Bamboo TreeB5: offset, minScale, maxScale.
+Young Bamboo TreeB6: offset, minScale, maxScale.
+Young Cane Stalk: Tag, offset, minScale, maxScale.
+arguments: speed, acceleration, contactProbeLength, offset, category, tier, HitPoints, AttackDamage, dataMetricCategory, UBPdefeat, LBPdefeat, XPdefeat, UBPskin, LBPskin, XPskin, aggressive, encumbrance, failChance, UBPcraft, LBPcraft, XPcraft, consumesFuel, defaultBurnTime, activeSound, ambSound, UBPdestroy, LBPdestroy, XPdestroy, slot, incorrectTierCap, equipSound, emptyContainer, energyUsed, spellName, spellIcon, castingSound, endCastingSound, noEnergySound, noEnergyEmitter, stoneBreakEmitter, persistent, castingTimerTick, energyPerTick, durabilityPerTick, swingtransition, CriticalHitPoints, CreakingSound, BreakSound, ammoUsed, forceModifier, damageModifier, materialSwap, gestationTime, TetherDistance, ContainerSize, ContainerView, Top, TopAttach, BottomAttach, RotationAxis, timeToOpen, angleToOpen, encumberance, staminaModifier, energyModifier, healthModifier, seedModel, TORPconsume, nextFormName, growableMaterialName, minimumGrowthTime, maximumGrowthTime, bodyToCheck, clearanceRadius, ammoType, controllerName, timeBetweenGrowths, timeBetweenGrowthsVariance, growableLimit, totalGrowables, spawningCenter, spawningRegionHeight, spawningRegionMinDistance, spawningRegionMaxDistance, defaultState, triggersOnByDefault, captureHoldOffset, releaseOffset, checkForTerrain, freeControllerWhenFinished, checkForPlacement, DeleteOnRestore, durability, damageBonus, headType, forwardContactEvents, canDig, placementSound, consumeSound, spawnRate, spawnLimit, spawnObject, revolvingDoorSpawn, creativeRotation, UBPfarm, LBPfarm, XPfarm, decayWhenFinished, baseGrowableRotation, colliderName, defaultPickupState, Category, spawningBounds.
+events: "OnDeathComplete", "OnAttack", "OnAttackComplete", "OnDeath", "TransitionToDefault", "OnSwing", "OnShoot", "OnThrow", "OnPickup".

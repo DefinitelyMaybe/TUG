@@ -1,0 +1,8 @@
+<snippet>
+	<content><![CDATA[
+NKParseFile($1)
+]]></content>
+	<tabTrigger>NKParseFile</tabTrigger>
+	<scope>source.lua</scope>
+	<description>system</description>
+</snippet>

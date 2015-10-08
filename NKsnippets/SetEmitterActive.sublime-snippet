@@ -1,0 +1,8 @@
+<snippet>
+	<content><![CDATA[
+NKSetEmitterActive(${1:true})
+]]></content>
+	<tabTrigger>NKSetEmitterActive</tabTrigger>
+	<scope>source.lua</scope>
+	<description>object</description>
+</snippet>

@@ -1,0 +1,8 @@
+<snippet>
+	<content><![CDATA[
+NKToString()
+]]></content>
+	<tabTrigger>NKToString</tabTrigger>
+	<scope>source.lua</scope>
+	<description>vec3/quat</description>
+</snippet>

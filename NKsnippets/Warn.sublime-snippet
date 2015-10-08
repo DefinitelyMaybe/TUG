@@ -1,0 +1,8 @@
+<snippet>
+	<content><![CDATA[
+NKWarn($1)
+]]></content>
+	<tabTrigger>NKWarn</tabTrigger>
+	<scope>source.lua</scope>
+	<description>system</description>
+</snippet>

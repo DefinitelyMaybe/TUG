@@ -1,0 +1,8 @@
+<snippet>
+	<content><![CDATA[
+AABBOverlapCollect(${1:VecMin}, ${2:VecMax}, ${3:VecPosition})
+]]></content>
+	<tabTrigger>AABBOverlapCollect</tabTrigger>
+	<scope>source.lua</scope>
+	<description>physics</description>
+</snippet>

@@ -1,0 +1,8 @@
+<snippet>
+	<content><![CDATA[
+NKGetName()
+]]></content>
+	<tabTrigger>NKGetName</tabTrigger>
+	<scope>source.lua</scope>
+	<description>object</description>
+</snippet>

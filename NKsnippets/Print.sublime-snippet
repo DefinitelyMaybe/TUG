@@ -1,0 +1,8 @@
+<snippet>
+	<content><![CDATA[
+NKPrint($1)
+]]></content>
+	<tabTrigger>NKPrint</tabTrigger>
+	<scope>source.lua</scope>
+	<description>system</description>
+</snippet>
