@@ -3,7 +3,7 @@ import re, pathlib
 #set the following to your own desire
 #To reduce the scope of the data change the path to just the folder you're interested in
 myTUGpathToData = "C:/Program Files (x86)/Steam/steamapps/common/TUG/Game/Core/Data/"
-outputFileName = "AllVariablesAndValues.txt"
+outputFileName = "test.txt"
 includeValues = False
 labelOfInterest = "EVERYTHING" #"EVERYTHING"
 catchExtraLabels = False
