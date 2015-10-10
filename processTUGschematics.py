@@ -1,84 +1,104 @@
-import sys, re, pathlib
+import re, pathlib
 
+#set the following to your own desire
+#To reduce the scope of the data change the path to just the folder you're interested in
+myTUGpathToData = "C:/Program Files (x86)/Steam/steamapps/common/TUG/Game/Core/Data/"
+outputFileName = "AllVariablesAndValues.txt"
+includeValues = False
+labelOfInterest = "EVERYTHING" #"EVERYTHING"
+catchExtraLabels = False
+
+class Node(object):
+	"""ADT for the TUGschematic for dealing with labels in a tree-like fashion"""
+	def __init__(self, value, parent=None):
+		self.value = value
+		self.parent = parent
+		self.children = []
+
+	def __repr__(self):
+		return self.value
+
+	def addChild(self, x):
+		if x not in self.children:
+			self.children += [x]
+		
 class TUGschematic(object):
-	"""docstring for TUGschematics"""
 	def __init__(self, x):
-		self.currentLevel = -1
-		self.previousLevel = -1
-		self.data = {}
-		self.labels = []
-		self.previousline = ""
+		self.currentLevel = 0
+		self.previousLevel = 0
 
-		#set the following to your own desire
-		self.UseInterestFilter = False
-		self.interest = "GameObjects"
-		self.interested = False
+		self.currentLabel = None
 
-		self.processLines(x)		
+		self.variables = {} #holds the variables and if chosen, associated values
+		self.labels = {} #holds labels and associated variables
 
-	def addAttri(self, x):
-		dkey = "{}".format(self.labels[-1])
-		if (dkey in self.data):
-			if x not in self.data[dkey]:
-				self.data[dkey] += [x]
+		self.processLines(x)
+
+	def addVariable(self, x):
+		if (self.currentLabel in self.labels):
+			if x not in self.labels[self.currentLabel]:
+				self.labels[self.currentLabel] += [x]
 		else:
-			self.data[dkey] = [x]
+			self.labels[self.currentLabel] = [x]
+
+	def addValue(self, var, value):
+		if (var in self.variables):
+			if value not in self.variables[var]:
+				self.variables[var] += [value]
+		else:
+			self.variables[var] = [value]
 
 	def processLines(self, x):
-		#Notice that 
+		pickUpLabel = False
+		print("Number of lines: " + str(len(x)) + "\n\n")
+
 		for i in range(len(x)):
 			line = x[i].strip()
+
 			if (len(line) < 1):
 				continue
-			if (self.UseInterestFilter):
-				if (line == self.interest):
-					self.interested = True
-				if (self.interested):
-					if (line[0] != "#" and line[0] != "/" and line[0] != "-"):
-						matchOpen = re.findall("{", line)
-						matchClose = re.findall("}", line)
+			if (labelOfInterest == "EVERYTHING"):
+				pickUpLabel = True
+			elif (line == labelOfInterest):
+				pickUpLabel = True
 
-						if (len(matchOpen) > 0):
-							self.currentLevel += 1
-							self.labels += [self.previousline]
-						elif (len(matchClose) > 0):
-							self.currentLevel -= 1
-							self.labels.pop()
-							if (self.currentLevel == 0):
-								self.interested = False
-
-						if (self.currentLevel == self.previousLevel):
-							self.previousline = line
-							matchAttri = re.findall(".* =", line)
-							if (len(matchAttri) > 0):
-								self.addAttri(matchAttri[0][:-2])
-						else:
-							self.previousLevel = self.currentLevel
-			else:
+			if (pickUpLabel):
+				#ignoring commented lines
 				if (line[0] != "#" and line[0] != "/" and line[0] != "-"):
-					matchOpen = re.findall("{", line)
-					matchClose = re.findall("}", line)
+					openBracket = re.findall("{", line)
+					closeBracket = re.findall("}", line)
 
-					if (len(matchOpen) > 0):
+					if (len(openBracket) > 0):
 						self.currentLevel += 1
-						self.labels += [self.previousline]
-					elif (len(matchClose) > 0):
+						if (line not in self.labels):
+							self.labels[line] = []
+							self.currentLabel = Node(line, self.currentLabel)
+					elif (len(closeBracket) > 0):
 						self.currentLevel -= 1
-						self.labels.pop()
-						if (self.currentLevel == 0):
-							self.interested = False
+						self.currentLabel = self.currentLabel.parent
+						if (self.currentLabel == None):
+							self.previousLabel = None
+						else:
+							self.previousLabel = self
+						if (self.currentLabel.value != labelOfInterest)
+							pickUpLabel = False
 
+					#Here we catch the variables and/or values
 					if (self.currentLevel == self.previousLevel):
-						self.previousline = line
-						matchAttri = re.findall(".* =", line)
-						if (len(matchAttri) > 0):
-							self.addAttri(matchAttri[0][:-2])
+						matchVariable = re.findall(".* =", line)
+						
+						if (len(matchVariable) > 0):
+							if (processToValues):
+								matchValue = re.findall("=.*", line)
+								self.addValue(matchVariable[0][:-2], matchValue[0][2:])
+							else:
+								self.addVariable(matchVariable[0][:-2])
 					else:
 						self.previousLevel = self.currentLevel
 		
 def readFiles():
 	data = []
-	p = pathlib.Path("C:/Program Files (x86)/Steam/steamapps/common/TUG/Game/Core/Data")
+	p = pathlib.Path(myTUGpathToData)
 	directories = [x for x in p.iterdir() if x.is_dir()]
 	for i in directories:
 		paths = list(i.glob('**/*.txt'))
@@ -89,38 +109,50 @@ def readFiles():
 			data += lines
 	return data
 
-def writeToFile(x, opt=False):
-	if (opt):
-		#attempt at pretty printing
-		s1, s2, s3 = "", "", ""
-
-		for i in range(len(x)):
-			if not(s1):
-				s1 = x[i]
-				if (i == len(x)):
-					sys.stdout.write(s1 + "\n")
-					s1, s2, s3 = "", "", ""
-			elif not(s2):
-				s2 = x[i]
-				if (i == len(x)):
-					sys.stdout.write("{}\t\t{}\n".format(s1, s2))
-					s1, s2, s3 = "", "", ""
-			elif not(s3):
-				s3 = x[i]
-				sys.stdout.write("{}\t\t{}\t\t{}\n".format(s1, s2, s3))
-				s1, s2, s3 = "", "", ""
+def writeToFile(var, val):
+	if (processToValues):
+		#have to chunk the data because it will be too large
+		print("being special\n\n")
+		writeToFileSpecial(var, val)
 	else:
-		for i in sorted(x):
-			sys.stdout.write(i + ": ")
-			for j in range(len(x[i])):
-				if (j == len(x[i]) - 1):
-					sys.stdout.write(x[i][j] + ".")
+		f = open(outputFileName, "w")
+		for i in sorted(var):
+			f.write(i + "\n{ ")
+			for j in range(len(var[i])):
+				x = var[i][j]
+
+				if (j == len(var[i])-1):
+					f.write(x)
 				else:
-					sys.stdout.write(x[i][j] + ", ")
-			sys.stdout.write("\n")
-	
-x = readFiles()
-schematicX = TUGschematic(x)
-writeToFile(schematicX.data)
+					f.write(x + ", ")
+			
+			f.write(" }\n\n")
+		f.close()
 
+def writeToFileSpecial():
+	chunkSize = 100
+	count = 0
+	stringData = ""
 
+	while len(var) > 0:
+		if (count == chunkSize):
+			#write memory to file
+			#f.write(stringData)
+			count = 0
+			stringData = ""
+		else:
+			#create value to write to file
+			pass
+
+	"""write(x + " : ")
+				if (x in val):
+					for k in range(len(val[x])):
+						if (k == len(val[x])-1):
+							write(val[x][k])
+						else:
+							write(val[x][k] + ",  ")"""
+
+if __name__ == '__main__':
+	x = readFiles()
+	schematicX = TUGschematic(x)
+	writeToFile(schematicX.variables, schematicX.values)
