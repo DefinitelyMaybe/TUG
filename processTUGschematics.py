@@ -1,13 +1,20 @@
 import re, pathlib
 
-#set the following to your own desire
-#To reduce the scope of the data change the path to just the folder you're interested in
-#Also use forward slashes in the paths not back slashes
-myTUGpathToData = "C:/Program Files (x86)/Steam/steamapps/common/TUG/Game/Core/Data"
+#Use forward slashes in the paths. No back slashes.
+TUG_DataPath = "C:/Program Files (x86)/Steam/steamapps/common/TUG/Game/Core/Data"
+OutputFileLocation = "C:/Program Files (x86)/Steam/steamapps/common/TUG/Mods/test.txt"
+
+#Reduce the scope of the data collected to just the specified directory
 readLocalSchematicsOnly = False
-outputFile = "C:/Program Files (x86)/Steam/steamapps/common/TUG/Mods/test.txt"
+
+#Useful if you don't care about any associated values.
 includeValues = True
-labelOfInterest = "EVERYTHING" #"EVERYTHING"
+
+#An empty string will be ignored. If specificed only that variable will be written within labels
+onlyThisVariable = "" # ie, "", "submesh" or "equipSound"
+
+#Specify to only pickup data within a label of interest
+labelOfInterest = "EVERYTHING" # ie, "EVERYTHING", "arguments" or "GameObjects"
 
 class Node(object):
 	"""ADT for the TUGschematic for dealing with labels in a tree-ish fashion"""
@@ -84,11 +91,10 @@ class TUGschematic(object):
 						if (self.currentLabel != None):
 							if (self.currentLabel.parent != None):
 								self.currentLabel = self.currentLabel.parent
-						else:
-							self.currentLabel = None
-						if (self.currentLabel != None):
-							if (self.currentLabel.value != labelOfInterest):
-								pickUpLabel = False
+							else:
+								self.currentLabel = None
+						if (self.currentLevel == labelOfInterestLevel):
+							pickUpLabel = False
 							
 
 					#Here we catch the variables and/or values
@@ -109,7 +115,7 @@ class TUGschematic(object):
 		
 def readFiles():
 	data = []
-	p = pathlib.Path(myTUGpathToData)
+	p = pathlib.Path(TUG_DataPath)
 	if (readLocalSchematicsOnly):
 		paths = list(p.glob('*.txt'))
 		for path in paths:
@@ -128,7 +134,7 @@ def readFiles():
 
 def writeToFile(lab, var):
 	#have to chunk the data because it will be too large
-	f = open(outputFile, "w")
+	f = open(OutputFileLocation, "w")
 	print("writing...")
 	print("Number of labels: " + str(len(lab)))
 	print("Number of variables: " + str(len(lab)))
@@ -136,18 +142,27 @@ def writeToFile(lab, var):
 	for label in sorted(lab):
 		if not(len(lab[label]) > 0):
 			continue
+		if (onlyThisVariable):
+			if not(onlyThisVariable in lab[label]):
+				continue
 		f.write(label + "\n{\n")
 		if (len(lab[label])>0):
 			for i in range(len(lab[label])):
 				x = lab[label][i]
 				if (includeValues):
 					if (x in var and len(var[x]) <= 1):
+						if (onlyThisVariable):
+							if (onlyThisVariable != x):
+								continue
 						f.write(x + " : ")
 						if (len(var[x]) == 1):
 							f.write(var[x].pop() + "\n")
 						else:
 							f.write("\n")
 					elif (x in var):
+						if (onlyThisVariable):
+							if (onlyThisVariable != x):
+								continue
 						f.write(x + " : ")
 						while (len(var[x])>0):
 							if (len(var[x]) == 1):
@@ -155,8 +170,14 @@ def writeToFile(lab, var):
 							else:
 								f.write(var[x].pop() +", ")
 					else:
+						if (onlyThisVariable):
+							if (onlyThisVariable != x):
+								continue
 						f.write(x)
 				else:
+					if (onlyThisVariable):
+							if (onlyThisVariable != x):
+								continue
 					if (i == len(lab[label])-1):
 						f.write(x)
 					else:
