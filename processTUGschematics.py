@@ -2,7 +2,7 @@ import re, pathlib
 
 #Use forward slashes in the paths. No back slashes.
 TUG_DataPath = "C:/Program Files (x86)/Steam/steamapps/common/TUG/Game/Core/Data"
-OutputFileLocation = "C:/Program Files (x86)/Steam/steamapps/common/TUG/Mods/test.txt"
+OutputFileLocation = "C:/Program Files (x86)/Steam/steamapps/common/TUG/Mods/SchematicData.txt"
 
 #Reduce the scope of the data collected to just the specified directory
 readLocalSchematicsOnly = False
