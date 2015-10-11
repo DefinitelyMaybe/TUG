@@ -11,7 +11,7 @@ readLocalSchematicsOnly = False
 includeValues = True
 
 #An empty string will be ignored. If specificed only that variable will be written within labels
-onlyThisVariable = "" # ie, "", "submesh" or "equipSound"
+onlyThisVariable = "category" # ie, "", "submesh" or "equipSound"
 
 #Specify to only pickup data within a label of interest
 labelOfInterest = "EVERYTHING" # ie, "EVERYTHING", "arguments" or "GameObjects"
@@ -114,6 +114,7 @@ class TUGschematic(object):
 		print("processing finished.\n")
 		
 def readFiles():
+	count = 0
 	data = []
 	p = pathlib.Path(TUG_DataPath)
 	if (readLocalSchematicsOnly):
@@ -123,6 +124,7 @@ def readFiles():
 			lines = f.read().split("\n")
 			f.close()
 			data += lines
+			count += 1
 	else:
 		paths = list(p.glob('**/*.txt'))
 		for path in paths:
@@ -130,6 +132,8 @@ def readFiles():
 			lines = f.read().split("\n")
 			f.close()
 			data += lines
+			count += 1
+	print("Read through {} schematic files.".format(count))
 	return data
 
 def writeToFile(lab, var):
