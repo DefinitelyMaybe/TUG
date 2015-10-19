@@ -1,3 +1,5 @@
-#running these two commands on a windows cmd will delete all .dds and .hkt files
-#cd C:\Program Files (x86)\Steam\steamapps\common\TUG\Game\Core
-#del /S /A [:*.dds :*.hkt]
+import subprocess
+
+path = "'C:\Program Files (x86)\Steam\steamapps\common\TUG\Game\Core'"
+
+subprocess.call("del /S /A [:*.dds *.hkt] {}".format(path), shell=True)
