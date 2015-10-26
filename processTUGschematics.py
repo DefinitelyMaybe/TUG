@@ -1,7 +1,7 @@
 import re, pathlib
 
 #Use forward slashes in the paths. No back slashes.
-TUG_DataPath = "C:/Program Files (x86)/Steam/steamapps/common/TUG/Game/Core/Data"
+TUG_DataPath = "C:/Program Files (x86)/Steam/steamapps/common/TUG/Game/Core/Data/Crafting"
 OutputFileLocation = "C:/Program Files (x86)/Steam/steamapps/common/TUG/Mods/SchematicData.txt"
 
 #Reduce the scope of the data collected to just the specified directory
@@ -11,10 +11,10 @@ readLocalSchematicsOnly = False
 includeValues = True
 
 #An empty string will be ignored. If specificed only that variable will be written within labels
-onlyThisVariable = "category" # ie, "", "submesh" or "equipSound"
+onlyThisVariable = "" # ie, "", "submesh" or "equipSound"
 
 #Specify to only pickup data within a label of interest
-labelOfInterest = "EVERYTHING" # ie, "EVERYTHING", "arguments" or "GameObjects"
+labelOfInterest = "Tool Recipes" # ie, "EVERYTHING", "arguments" or "GameObjects"
 
 class Node(object):
 	"""ADT for the TUGschematic for dealing with labels in a tree-ish fashion"""

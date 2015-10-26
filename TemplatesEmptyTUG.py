@@ -1,39 +1,59 @@
+import re
 #Assume reading one old schematic and re-creating a new one from it.
 
 #Use forward slashes in the paths. No back slashes.
-SchematicDataPath = "C:/Program Files (x86)/Steam/steamapps/common/TUG/Game/Core/Data"
-OutputFile = "C:/Program Files (x86)/Steam/steamapps/common/TUG/Mods/SchematicData.txt"
+TUGSchematicDataFile = "C:/Users/Rawr/Documents/GitHub/TUG/TestData.txt"
+OutputFile = "C:/Users/Rawr/Documents/GitHub/TUG/TestOutput.txt"
 
-#Use all old labels, attributes, values.
+
+#NOT USED YET----------------vvvvvvvvvvvvvv-----------------
+#Use old labels, attributes, values. 
+#If false and script cannot find label, attri or value then it will be discarded.
 IncludeOld = True
-
+#After processing, labels with similar attributes will be have there values merged and then cut.
+MergeData = True
 #How to specify new things?
 NewThings = {}
+#NOT USED YET----------------^^^^^^^^^^^^^------------------
 
-class TreeNodeTUG(object):
-    def __init__(self, name, parent=None):
-        self.name = name
+class Node(object):
+	def __init__(self, name, level, parent):
+		self.name = name
+		self.l = level
 		self.parent = parent
 		self.children = []
-        self.attributes = {} #value key pairs printed initially if present
-	
-	def __repr__(self):
-		return self.name
+		self.attributes = {} #value key pairs printed initially if present
+
+	def __str__(self):
+		x = ""
+		x += "{0}{1}\n{0}".format("\t"*self.l, self.name)
+		x += "{\n"
+		for i in sorted(self.attributes):
+			x += '{0}{1} = {2}\n'.format("\t"*(self.l+1), i, self.attributes[i])
+		for i in range(len(self.children)):
+			x += str(self.children[i])
+		x += "\t" * self.l + "}\n"
+		return x
 
 	def addChild(self, x):
 		if x not in self.children:
 			self.children += [x]
 
-class SchematicParserTUG(object):
-	def __init__(self, oldData):
-		self.currentNode = None
-		self.process(oldData)
+class SchematicProcessor(object):
+	def __init__(self, data):
+		self.cNode = Node("RootContainer", 0, None)
+		self.process(data)
 
 	def addAttribute(self, key, value):
-		if (self.currentNode != None):
-			self.currentNode.attributes[key] = [value]
+		if (self.cNode != None):
+			if (key in self.cNode.attributes):
+				self.cNode.attributes[key] += [value]
+			else:
+				self.cNode.attributes[key] = value
 
-	def processor(self, x):
+	def process(self, x):
+		print("Processing {} lines.\n".format(len(x)))
+		c = 0
 		for i in range(len(x)):
 			line = x[i].strip()
 
@@ -45,91 +65,34 @@ class SchematicParserTUG(object):
 				closeBracket = re.findall("}", line)
 
 				if (len(openBracket) > 0):
-					self.currentLabel = TreeNodeTUG(self.previousLine, self.currentLabel)
-					if (self.currentLabel.value not in self.labels):
-						self.labels[self.currentLabel.value] = []
-
+					c += 1
+					newNode = Node(x[i-1].strip(), c, self.cNode)
+					self.cNode.addChild(newNode)
+					self.cNode = newNode
 				elif (len(closeBracket) > 0):
-					if (self.currentLabel != None):
-						if (self.currentLabel.parent != None):
-							self.currentLabel = self.currentLabel.parent
-						else:
-							self.currentLabel = None
-					if (self.currentLevel == labelOfInterestLevel):
-						pickUpLabel = False
-						
+					c -= 1
+					self.cNode = self.cNode.parent
 
 				#Here we catch the variables and/or values
-				if (self.currentLevel == self.previousLevel):
-					matchVariable = re.findall(".* =", line)
-					self.previousLine = line
-					
-					if (len(matchVariable) > 0):
-						if (includeValues):
-							matchValue = re.findall("=.*", line)
-							self.addValue(matchVariable[0][:-2], matchValue[0][2:])
-							self.addVariable(matchVariable[0][:-2])
-						else:
-							self.addVariable(matchVariable[0][:-2])
-				else:
-					self.previousLevel = self.currentLevel
-		print("processing finished.\n")
-		
-"""
-f = open(TUG_DataPath, "r")
-data = f.read().split("\n")
-f.close()
-return data
-"""
+				matchAttri = re.findall(".* =", line)
+				if (len(matchAttri) > 0):
+					matchValue = re.findall("=.*", line)
+					self.addAttribute(matchAttri[0][:-2], matchValue[0][2:])
+		print("Processing finished.\n")
 
-"""
-f = open(OutputFileLocation, "w")
-for label in sorted(lab):
-	if not(len(lab[label]) > 0):
-		continue
-	if (onlyThisVariable):
-		if not(onlyThisVariable in lab[label]):
-			continue
-	f.write(label + "\n{\n")
-	if (len(lab[label])>0):
-		for i in range(len(lab[label])):
-			x = lab[label][i]
-			if (includeValues):
-				if (x in var and len(var[x]) <= 1):
-					if (onlyThisVariable):
-						if (onlyThisVariable != x):
-							continue
-					f.write(x + " : ")
-					if (len(var[x]) == 1):
-						f.write(var[x].pop() + "\n")
-					else:
-						f.write("\n")
-				elif (x in var):
-					if (onlyThisVariable):
-						if (onlyThisVariable != x):
-							continue
-					f.write(x + " : ")
-					while (len(var[x])>0):
-						if (len(var[x]) == 1):
-							f.write(var[x].pop() + "\n")
-						else:
-							f.write(var[x].pop() +", ")
-				else:
-					if (onlyThisVariable):
-						if (onlyThisVariable != x):
-							continue
-					f.write(x)
-			else:
-				if (onlyThisVariable):
-						if (onlyThisVariable != x):
-							continue
-				if (i == len(lab[label])-1):
-					f.write(x)
-				else:
-					f.write(x + ", ")
-	f.write("}\n\n")
-print("writing finished.")
-f.close()"""
-	
+	def writeProcessedData(self, f):
+		if (self.cNode.name != "RootContainer"):
+			print("self.cNode was not at ROOT")
+			return
+		f.write(str(self.cNode))	
+
 if __name__ == "__main__":
-    pass
+	f = open(TUGSchematicDataFile, "r")
+	TUGdata = f.read().split("\n")
+	f.close()
+	
+	ProcessorX = SchematicProcessor(TUGdata)
+
+	f = open(OutputFile, "w")
+	ProcessorX.writeProcessedData(f)
+	f.close()
