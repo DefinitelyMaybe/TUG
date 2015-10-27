@@ -88,6 +88,29 @@ GameObjects
 
 				placementSound = "SandPlace"
 			}
+			Equipable
+			{
+				name = "Wood Shaft"
+				icon = "woodStaffLightwood"
+				minScale = 1.0
+				maxScale = 1.0
+
+				category = "Wood"
+				tier = 2
+				resource = 1
+				maxStackCount = 1
+
+				health = 10
+				durability = 20.0
+				damageToCharacters = 2.0
+				damageToObjects = 8.0
+				durabilityLossOnCorrect = 1.0
+				durabilityLossOnIncorrect = 2.0
+				
+				craftingArchetype = "Long Shaft"
+
+				placementSound = "SandPlace"
+			}
 
 		}
 	}
