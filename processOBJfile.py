@@ -1,37 +1,29 @@
 """
-@Author: Aaron (Rawr)
-
 @Description: 
 This programme takes a OBJ file as input. 
-It reads through each line, creating an OBJ class when it finds "o - mesh_names" lines. 
-All lines read after that are treated as data belonging to that OBJ class. 
-The OBJ classes are then ordered and written to file so that any objects named "pivot" 
-are at the top and objects who's names end with _coll are at the bottom.
+It reads through each line, creating an OBJ class when it finds "o" or "g" at the start of a line. 
+All lines read after that are treated as data belonging to that OBJ class until another object line is found. 
+The OBJ classes are then ordered and written to file.
 
 @help: 
-You'll need to install python 3.X.X if you don't already have it. 
-https://www.python.org/downloads/
-Your OBJ file also needs to use the "o" identifier i.e. "o object_name"
-check out my tutorial here if you need extra help:
-http://forum.nerdkingdom.com/discussion/2293/using-blender-youll-need-this
-1 - open your folder with "processOBJfile.py" < add your.obj file into the same folder.
+You'll need to install python 3 if you don't already have it. 
+1 - open your folder with "processOBJfile.py" < add example.obj file into the same folder.
 2 - copy the address of this folder.
 3 - press start < type "cmd" < press enter
 4 - type "cd" < hit space < right click < paste < hit enter
-5 - type "python processOBJfile.py < your.obj > anyNameYouLike.obj"
-6 - Enjoy.
+5 - type "python processOBJfile.py < example.obj > anyNameYouLike.obj"
 """
 
 import sys
 
-class OBJ():
+class OBJobject():
 	def __init__(self, name):
 		self.name = name
+		self.compare = self.getCompareValue(self.name)
 		self.v = []
 		self.vt = []
 		self.vn = []
 		self.f = []
-		self.compare = self.getCompareValue(self.name)
 
 	def __repr__(self):
 		x = "o {}\n\n".format(self.name)
@@ -69,7 +61,7 @@ class OBJ():
 
 	def getCompareValue(self, x):
 		#pivot is less than _coll
-		if x[:5] == "pivot":
+		if x == "pivot":
 			return 1
 		elif x[-5:] == "_coll":
 			return 3
@@ -78,104 +70,79 @@ class OBJ():
 
 	def len(self):
 		return [len(self.v), len(self.vt), len(self.vn)]
-	
-	def addV(self, x):
-		self.v += [x]
 
-	def addVN(self, x):
-		self.vn += [x]
+	def reformatFaces(self, x):
+		# x = [v, vt, vn]
+		# x is the an array containing the modify by values.
+		#Processing the array of arrays.
+		c = 0
+		for i in self.f:
+			if not(isinstance(i, list)):
+				#This is here because "s ..." is still in self.f
+				c += 1
+				continue
+			y = "f "
+			for j in i:
+				for k in range(3):
+					if (j[k] == None):
+						y += "/"
+					else:
+						y += str(j[k] + x[k]) + "/"
+				y = y[:-1]
+				y += " "
+			self.f[c] = y[:-1]
+			c += 1
 
-	def addVT(self, x):
-		self.vt += [x]
+def processFile():
+	# [v, vt, vn]
+	#current count and totals
+	c = [0, 0, 0]
+	t = [0, 0, 0]
 
-	def addF(self, x, y):
-		if y in self.f:
-			#temp = self.f.index(y)
-			self.f += [x]
-		else:
-			self.f += [y]
-			self.f += [x]
-
-	def formatF(self, x):
-		#1 - s 1
-		#2 - [[1, 1, 1], [2, 2, 2], [3, 3, 3], [4, 4, 4]]
-		#3 - [[2, 2, 2], [5, 5, 5], [6, 6, 6], [3, 3, 3]]
-		#4 - [[5, 7, 5], [7, 8, 7], [8, 9, 8], [6, 10, 6]]
-		# i = ^^^
-		for i in range(len(self.f)):
-			try:
-				#[1 - [18, 21, 18], 2 - [17, 20, 17], 3 - [10, 12, 10], 4 - [12, 14, 12]]
-				# j = ^^^
-				temp = "f "
-				for j in range(len(self.f[i])):
-					#[12, 14, 12]
-					# k = ^^^
-					temp2 = ""
-					for k in range(len(self.f[i][j])):
-						self.f[i][j][k] = self.f[i][j][k] + x[k]
-						temp2 += str(self.f[i][j][k]) + "/"
-					self.f[i][j] = temp2[:-1]
-				for j in self.f[i]:
-					temp += j + " "
-				self.f[i] = temp[:-1]
-			except:
-				pass
-
-
-def processFileByLine():
-	vC, vtC, vnC = 0, 0, 0
-	vT, vtT, vnT = 0, 0, 0
-	objCount, faceS = 0, ""
-	objA = [] #the array containing OBJ objects
+	objA = [] #an array containing .obj objects.
 
 	for l in sys.stdin:
-		x = l[0]
-		try:
-			a = l[1]
-		except:
-			a = " "
-		if x == "o":
-			objA += [OBJ(l.split()[1])]
-			objCount += 1
-			vT, vtT, vnT = vC, vtC, vnC
-		elif (x == "v") and (a == " "):
-			temp = "{} {} {}".format(l.split()[1][:-2], l.split()[2][:-2], l.split()[3][:-2])
-			objA[objCount-1].addV(temp)
-			vC += 1
-		elif (x == "v") and (a == "t"):
-			temp = "{} {}".format(l.split()[1][:-2], l.split()[2][:-2])
-			objA[objCount-1].addVT(temp)
-			vtC += 1
-		elif (x == "v") and (a == "n"):
-			temp = "{} {} {}".format(l.split()[1][:-2], l.split()[2][:-2], l.split()[3][:-2])
-			objA[objCount-1].addVN(temp)
-			vnC += 1
-		elif x == "s":
-			faceS = l[:-1]
-		elif x == "f":
-			temp = processFace(l[2:], [vT, vtT, vnT])
-			objA[objCount-1].addF(temp, faceS)
+		x = l.split()
+		if (len(x) < 1):
+			continue
+		if (x[0] == "o" or x[0] == "g"):
+			objA += [OBJobject(x[1])]
+			# New object to setup the totals.
+			for i in range(3):
+				t[i] = c[i]
+		elif (x[0] == "v"):
+			objA[-1].v += ["{} {} {}".format(x[1], x[2], x[3])]
+			c[0] += 1
+		elif (x[0] == "vt"):
+			objA[-1].vt += ["{} {}".format(x[1], x[2])]
+			c[1] += 1
+		elif (x[0] == "vn"):
+			objA[-1].vn += ["{} {} {}".format(x[1], x[2], x[3])]
+			c[2] += 1
+		elif (x[0] == "s"):
+			objA[-1].f += [l]
+		elif (x[0] == "f"):
+			temp = []
+			for i in x[1:]:
+				y = i.split("/")
+				for j in range(3):
+					if (y[j] == ""):
+						y[j] = None
+					else:
+						y[j] = int(y[j]) - t[j]
+				temp += [y]
+			objA[-1].f += [temp]
 
 	return objA
 
-def processFace(x, a):
-	data = x.split()
-	out = []
-	for i in data:
-		y = i.split("/")
-		for j in range(len(y)):
-			y[j] = int(y[j]) - a[j]
-		out += [y]
-	return out
-
 def writeToFile(x):
 	y = [0, 0, 0]
-	sys.stdout.write("# Blender OBJ File. Restructured for TUG.\n\n")
+	sys.stdout.write("# Blender OBJ File. Re-constructed for TUG.\n\n")
 	for i in sorted(x):
-		i.formatF(y)
+		i.reformatFaces(y)
 		sys.stdout.write(str(i))
 		temp = i.len()
 		for j in range(3):
 			y[j] += temp[j]
 
-writeToFile(processFileByLine())
+writeToFile(processFile())
