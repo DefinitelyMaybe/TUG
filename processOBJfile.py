@@ -63,10 +63,16 @@ class OBJobject():
 		#pivot is less than _coll
 		if x == "pivot":
 			return 1
-		elif x[-5:] == "_coll":
-			return 3
-		else:
+		elif x == "hand_atch":
 			return 2
+		elif x[-10:] == "_atch_rotx":
+			return 3
+		elif x[-10:] == "_atch_roty":
+			return 4
+		elif x[-5:] == "_coll":
+			return 6
+		else:
+			return 5
 
 	def len(self):
 		return [len(self.v), len(self.vt), len(self.vn)]
@@ -123,14 +129,18 @@ def processFile():
 			objA[-1].f += [l]
 		elif (x[0] == "f"):
 			temp = []
-			for i in x[1:]:
-				y = i.split("/")
-				for j in range(3):
-					if (y[j] == ""):
-						y[j] = None
-					else:
-						y[j] = int(y[j]) - t[j]
-				temp += [y]
+			if "/" in x[1]:
+				for i in x[1:]:
+					y = i.split("/")
+					for j in range(3):
+						if (y[j] == ""):
+							y[j] = None
+						else:
+							y[j] = int(y[j]) - t[j]
+					temp += [y]
+			else:
+				print("please include the uv's and normals.")
+			
 			objA[-1].f += [temp]
 
 	return objA
